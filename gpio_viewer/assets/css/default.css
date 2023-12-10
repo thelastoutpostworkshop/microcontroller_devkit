@@ -6,7 +6,7 @@ html {
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* Minimum height to fill the viewport */
-  background-color: #f0f0f0; /* For better visibility */
+  background-color: #ffffff; 
 }
 
 .image-container {
