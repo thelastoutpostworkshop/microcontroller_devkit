@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image with Indicators</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Minimum height to fill the viewport */
+        background-color: #f0f0f0; /* For better visibility */
+      }
+
+      .image-container {
+        position: relative;
+        display: inline-block;
+        max-width: 100%; /* Ensure container doesn't overflow */
+        max-height: 100vh; /* Max height to fit in viewport */
+        overflow: hidden; /* Hide any overflow */
+      }
+
+      .image-container img {
+        max-width: 100%; /* Max width to fit in container */
+        max-height: 100vh; /* Max height to fit in viewport */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any default inline spacing */
+      }
+
+      .indicator {
+        position: absolute;
+        background-color: lightgreen;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        padding: 5px;
+        padding: 5px;
+        transform: translate(-50%, -50%);
+      }
+      .centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #f9f5f5; /* Text color */
+        font-size: 1vw; /* Responsive font size */
+        text-align: center;
+        background-color: rgba(8, 145, 213, 0.9); /* Blue background with 90% opacity */
+        padding: 10px; /* Padding around the text */
+        border-radius: px; /* Rounded corners */
+        border: 5px solid darkblue; /* Red border */
+        font-weight: bold;
+        font-family: Arial, sans-serif; /* Arial font */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="http://192.168.1.90/images/ESP32_D1_R32.png" alt="Placeholder Image" />
+      <div class="centered-text">Sampling Interval is 100ms</div>
+
+      <div class="indicator" style="top: 45.7%; left: 5%"></div>
+      <div class="indicator" style="top: 56%; left: 14.5%"></div>
+      <div class="indicator" style="top: 59.4%; left: 14.5%"></div>
+      <div class="indicator" style="top: 63%; left: 14.5%"></div>
+      <div class="indicator" style="top: 76.7%; left: 5%"></div>
+      <div class="indicator" style="top: 80.2%; left: 5%"></div>
+      <div class="indicator" style="top: 83.6%; left: 5%"></div>
+      <div class="indicator" style="top: 87%; left: 5%"></div>
+      <div class="indicator" style="top: 90.4%; left: 5%"></div>
+      <div class="indicator" style="top: 94%; left: 5%"></div>
+
+
+      <div class="indicator" style="top: 32%; left: 97%"></div>
+      <div class="indicator" style="top: 35.4%; left: 97%"></div>
+      <div class="indicator" style="top: 45.7%; left: 97%"></div>
+      <div class="indicator" style="top: 49.2%; left: 97%"></div>
+      <div class="indicator" style="top: 52.5%; left: 97%"></div>
+      <div class="indicator" style="top: 56%; left: 97%"></div>
+      <div class="indicator" style="top: 59.5%; left: 97%"></div>
+      <div class="indicator" style="top: 63%; left: 97%"></div>
+      <div class="indicator" style="top: 69.8%; left: 97%"></div>
+      <div class="indicator" style="top: 73.3%; left: 97%"></div>
+      <div class="indicator" style="top: 76.7%; left: 97%"></div>
+      <div class="indicator" style="top: 80.2%; left: 97%"></div>
+      <div class="indicator" style="top: 83.7%; left: 97%"></div>
+      <div class="indicator" style="top: 87.2%; left: 97%"></div>
+      <div class="indicator" style="top: 90.5%; left: 97%"></div>
+      <div class="indicator" style="top: 93.7%; left: 97%"></div>
+      
+    </div>
+  </body>
+</html>
