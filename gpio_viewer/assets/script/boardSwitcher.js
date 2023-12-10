@@ -14,7 +14,7 @@ async function initializeMenu() {
     const menuHtml = await loadHtmlSnippet('html/menu.html');
     if (menuHtml) {
         document.body.insertAdjacentHTML('afterbegin', menuHtml);
-        await populateMenu();
+        await populateMenu(); // Ensure this is called after the HTML snippet is added
     }
 }
 
@@ -31,16 +31,21 @@ async function loadBoardsData() {
 }
 
 async function populateMenu() {
-  const boardsData = await loadBoardsData();
-  if (!boardsData) return;
+    const boardsData = await loadBoardsData();
+    if (!boardsData) return;
 
-  const selector = document.getElementById("boardSelector");
-  boardsData.forEach((board) => {
-    const option = document.createElement("option");
-    option.value = board.name;
-    option.textContent = board.name;
-    selector.appendChild(option);
-  });
+    const selector = document.getElementById('boardSelector');
+    if (!selector) {
+        console.error('boardSelector element not found');
+        return;
+    }
+
+    boardsData.forEach(board => {
+        const option = document.createElement('option');
+        option.value = board.name;
+        option.textContent = board.name;
+        selector.appendChild(option);
+    });
 }
 
 function switchBoard() {
@@ -56,4 +61,4 @@ function switchBoard() {
   });
 }
 
-window.onload = populateMenu;
+window.onload = initializeMenu; 
