@@ -2,22 +2,19 @@ body,
 html {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh; /* Minimum height to fill the viewport */
-  background-color: #ffffff;
-}
-
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  background-color: #ffffff; 
 }
 
 .image-container {
   position: relative;
+  display: inline-block;
   max-width: 100%; /* Ensure container doesn't overflow */
   max-height: 100vh; /* Max height to fit in viewport */
-  margin-top: 50px; /* Adjust as needed to ensure it's below the menu */
+  overflow: hidden; /* Hide any overflow */
 }
 
 .image-container img {
@@ -60,4 +57,10 @@ html {
   border: 5px solid darkblue; /* Red border */
   font-weight: bold;
   font-family: Arial, sans-serif; /* Arial font */
+}
+#menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
 }
