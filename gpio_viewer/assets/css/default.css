@@ -58,3 +58,9 @@ html {
   font-weight: bold;
   font-family: Arial, sans-serif; /* Arial font */
 }
+#menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
