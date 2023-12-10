@@ -11,7 +11,7 @@ async function loadHtmlSnippet(url) {
 }
 
 async function initializeMenu() {
-    const menuHtml = await loadHtmlSnippet('/html/menu.html');
+    const menuHtml = await loadHtmlSnippet('html/menu.html');
     if (menuHtml) {
         document.body.insertAdjacentHTML('afterbegin', menuHtml);
         await populateMenu();
@@ -20,7 +20,7 @@ async function initializeMenu() {
 
 async function loadBoardsData() {
   try {
-    const response = await fetch("/script/boards.json");
+    const response = await fetch("script/boards.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
