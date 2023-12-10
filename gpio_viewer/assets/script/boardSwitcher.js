@@ -20,7 +20,7 @@ async function initializeMenu() {
 
 async function loadBoardsData() {
   try {
-    const response = await fetch("script/boards.json");
+    const response = await fetch("boards.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
