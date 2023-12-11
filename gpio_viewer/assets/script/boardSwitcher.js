@@ -44,13 +44,24 @@ async function populateMenu() {
         return;
     }
 
+    // Track the index to identify the first element
+    let isFirstOption = true;
+
     boardsData.forEach(board => {
         const option = document.createElement('option');
         option.value = board.name;
         option.textContent = board.name;
+
+        // If it's the first option, select it
+        if (isFirstOption) {
+            option.selected = true;
+            isFirstOption = false;
+        }
+
         selector.appendChild(option);
     });
 }
+
 
 function switchBoard() {
   const selector = document.getElementById("boardSelector");
