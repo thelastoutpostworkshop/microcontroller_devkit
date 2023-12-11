@@ -1,52 +1,50 @@
 .grid-container {
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr); /* 'minmax(0, 1fr)' ensures the image row doesn't exceed available space */
-  grid-template-areas: 
+  grid-template-rows: auto 90vh;
+  grid-template-areas:
     "header"
     "image";
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevents any overflow */
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header {
   grid-area: header;
-  background-color: #e7f4fb; 
+  background-color: #e7f4fb;
   margin-top: 1%;
   margin-left: 1%;
   margin-right: 1%;
   padding: 1%;
   border-style: solid;
   border-color: rgb(120, 120, 196);
+  font-size: 3vh;
 }
 
 .image-container {
-  position: relative;
   grid-area: image;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Ensures no spillover of the image */
-  background-color: #ffffff; 
-  padding-top: 1%;
-
+  align-items: center; 
+  justify-content: center; 
+  overflow: hidden; 
 }
 
 .image-container img {
-  position: relative; /* New: make the image a positioning context */
   max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  object-fit: contain;
+  max-height: 80vh;
 }
 
-/* Adjust the indicator positions */
-.indicator-on, .indicator-off {
+.image-wrapper {
+  position: relative;
+}
+
+.indicator-on,
+.indicator-off {
   position: absolute;
-  background-color: lightgreen;
   width: 1vw;
   height: 1vw;
   border-radius: 50%;
   padding: 5px;
+  transform: translate(-50%, -50%);
 }
 
 .indicator-on {
