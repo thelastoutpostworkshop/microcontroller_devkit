@@ -13,10 +13,14 @@ async function loadHtmlSnippet(url) {
 async function initializeMenu() {
     const menuHtml = await loadHtmlSnippet('html/menu.html');
     if (menuHtml) {
-        document.body.insertAdjacentHTML('afterbegin', menuHtml);
-        await populateMenu(); // Ensure this is called after the HTML snippet is added
+        const headerElement = document.querySelector('.header'); // Target the header element
+        if (headerElement) {
+            headerElement.innerHTML = menuHtml; // Replace the content of the header element
+            await populateMenu(); // Ensure this is called after the HTML snippet is added
+        }
     }
 }
+
 
 async function loadBoardsData() {
   try {
