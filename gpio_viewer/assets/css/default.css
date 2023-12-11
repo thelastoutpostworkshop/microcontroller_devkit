@@ -20,12 +20,16 @@
   font-size: 3vh;
 }
 
+.menu {
+  font-size: 3vh;
+}
+
 .image-container {
   grid-area: image;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  overflow: hidden; 
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .image-container img {
