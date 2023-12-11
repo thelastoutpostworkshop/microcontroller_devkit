@@ -60,6 +60,7 @@ async function populateMenu() {
 
         selector.appendChild(option);
     });
+    switchBoard();
 }
 
 
