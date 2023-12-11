@@ -15,7 +15,7 @@ async function initializeMenu() {
     if (menuHtml) {
         const headerElement = document.querySelector('.header'); // Target the header element
         if (headerElement) {
-            headerElement.innerHTML = menuHtml; // Replace the content of the header element
+            headerElement.insertAdjacentHTML('afterbegin', menuHtml); // Prepend the content to the header element
             await populateMenu(); // Ensure this is called after the HTML snippet is added
         }
     }
