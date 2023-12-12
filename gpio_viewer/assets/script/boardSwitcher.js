@@ -76,14 +76,17 @@ async function switchBoard() {
       document.getElementById("boardStyleSheet").href = board.css;
       document.getElementById("boardImage").src = board.image;
   
-      // Load and replace the indicators div with new HTML
+      // Load and replace only the indicators div
       try {
         const pinsHtml = await loadHtmlSnippet(board.pins);
-        const parentElement = document.getElementById("indicators").parentElement;
-        if (pinsHtml && parentElement) {
-          parentElement.innerHTML = pinsHtml; // Replace the content of the parent, which includes the indicators div
+        const oldIndicatorsElement = document.getElementById("indicators");
+        if (pinsHtml && oldIndicatorsElement) {
+          const newIndicatorsElement = document.createElement('div');
+          newIndicatorsElement.innerHTML = pinsHtml;
+  
+          oldIndicatorsElement.replaceWith(newIndicatorsElement);
         } else {
-          console.error("Pins HTML or parent of indicators element not found");
+          console.error("Pins HTML or indicators element not found");
         }
       } catch (error) {
         console.error(`Error loading pins HTML from ${board.pins}:`, error);
@@ -92,6 +95,7 @@ async function switchBoard() {
       console.error(`Board not found for name: ${selectedBoardName}`);
     }
   }
+  
   
 
 window.onload = initializeMenu;
