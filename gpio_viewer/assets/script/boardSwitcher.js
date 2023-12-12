@@ -79,9 +79,9 @@ async function switchBoard() {
     // Load and append the HTML snippet for the selected board
     try {
       const pinsHtml = await loadHtmlSnippet(board.pins);
-      const imageWrapperElement = document.getElementById("imageWrapper");
+      const imageWrapperElement = document.getElementById("indicators");
       if (pinsHtml && imageWrapperElement) {
-        imageWrapperElement.insertAdjacentHTML("beforeend", pinsHtml);
+        indicatorsElement.innerHTML = pinsHtml; // Replace the content
       } else {
         console.error("Pins HTML or imageWrapper element not found");
       }
