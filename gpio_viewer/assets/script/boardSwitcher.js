@@ -63,34 +63,35 @@ async function populateMenu() {
 }
 
 async function switchBoard() {
-  const selector = document.getElementById("boardSelector");
-  const selectedBoardName = selector.value;
-
-  const boardsData = await loadBoardsData();
-  console.log("Loaded boards data:", boardsData); // Debugging line
-
-  const board = boardsData.find((b) => b.name === selectedBoardName);
-  console.log("Selected board:", board); // Debugging line
-
-  if (board) {
-    document.getElementById("boardStyleSheet").href = board.css;
-    document.getElementById("boardImage").src = board.image;
-
-    // Load and append the HTML snippet for the selected board
-    try {
-      const pinsHtml = await loadHtmlSnippet(board.pins);
-      const imageWrapperElement = document.getElementById("indicators");
-      if (pinsHtml && imageWrapperElement) {
-        indicatorsElement.innerHTML = pinsHtml; // Replace the content
-      } else {
-        console.error("Pins HTML or imageWrapper element not found");
+    const selector = document.getElementById("boardSelector");
+    const selectedBoardName = selector.value;
+  
+    const boardsData = await loadBoardsData();
+    console.log("Loaded boards data:", boardsData); // Debugging line
+  
+    const board = boardsData.find((b) => b.name === selectedBoardName);
+    console.log("Selected board:", board); // Debugging line
+  
+    if (board) {
+      document.getElementById("boardStyleSheet").href = board.css;
+      document.getElementById("boardImage").src = board.image;
+  
+      // Load and replace the indicators div with new HTML
+      try {
+        const pinsHtml = await loadHtmlSnippet(board.pins);
+        const parentElement = document.getElementById("indicators").parentElement;
+        if (pinsHtml && parentElement) {
+          parentElement.innerHTML = pinsHtml; // Replace the content of the parent, which includes the indicators div
+        } else {
+          console.error("Pins HTML or parent of indicators element not found");
+        }
+      } catch (error) {
+        console.error(`Error loading pins HTML from ${board.pins}:`, error);
       }
-    } catch (error) {
-      console.error(`Error loading pins HTML from ${board.pins}:`, error);
+    } else {
+      console.error(`Board not found for name: ${selectedBoardName}`);
     }
-  } else {
-    console.error(`Board not found for name: ${selectedBoardName}`);
   }
-}
+  
 
 window.onload = initializeMenu;
