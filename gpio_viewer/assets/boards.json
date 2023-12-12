@@ -2,16 +2,19 @@
     {
         "name": "ESP32-D1-R32",
         "css": "css/esp32_d1_r32.css",
-        "image": "devboards_images/ESP32_D1_R32.png"
+        "image": "devboards_images/ESP32_D1_R32.png",
+        "pins": "html/esp32_d1_r32.html"
     },
     {
         "name": "ESP32-38pins",
         "css": "css/esp32_default.css",
-        "image": "devboards_images/esp32_38pins.png"
+        "image": "devboards_images/esp32_38pins.png",
+        "pins": "html/esp32_d1_r32.html"
     },
     {
         "name": "ESP32-S3-Wroom-1",
         "css": "css/esp32_default.css",
-        "image": "devboards_images/esp32-s3-wroom-1.png"
+        "image": "devboards_images/esp32-s3-wroom-1.png",
+        "pins": "html/esp32_d1_r32.html"
     }
 ]

@@ -63,18 +63,25 @@ async function populateMenu() {
     switchBoard();
 }
 
-
-function switchBoard() {
-  const selector = document.getElementById("boardSelector");
-  const selectedBoardName = selector.value;
-  loadBoardsData().then((boardsData) => {
+async function switchBoard() {
+    const selector = document.getElementById("boardSelector");
+    const selectedBoardName = selector.value;
+  
+    const boardsData = await loadBoardsData();
     const board = boardsData.find((b) => b.name === selectedBoardName);
-
+  
     if (board) {
       document.getElementById("boardStyleSheet").href = board.css;
       document.getElementById("boardImage").src = board.image;
+  
+      // Load and append the HTML snippet for the selected board
+      const pinsHtml = await loadHtmlSnippet(board.pins); // Assuming 'pins' is the property with the URL
+      const imageWrapperElement = document.getElementById("imageWrapper");
+      if (pinsHtml && imageWrapperElement) {
+        imageWrapperElement.insertAdjacentHTML('beforeend', pinsHtml); // Append the content to the end of image-wrapper element
+      }
     }
-  });
-}
+  }
+  
 
 window.onload = initializeMenu; 
