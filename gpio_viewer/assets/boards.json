@@ -9,7 +9,7 @@
         "name": "ESP32-38pins",
         "css": "css/esp32_default.css",
         "image": "devboards_images/esp32_38pins.png",
-        "pins": "html/esp32_d1_r32.html"
+        "pins": "html/esp32_38pins.html"
     },
     {
         "name": "ESP32-S3-Wroom-1",
