@@ -6,9 +6,10 @@ async function loadHtmlSnippet(url) {
         }
         return await response.text();
     } catch (error) {
-        console.error('Could not load HTML snippet:', error);
+        console.error(`Could not load HTML snippet from URL '${url}':`, error);
     }
 }
+
 
 async function initializeMenu() {
     const menuHtml = await loadHtmlSnippet('html/menu.html');
