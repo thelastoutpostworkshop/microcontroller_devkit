@@ -15,6 +15,6 @@
         "name": "ESP32-S3-Wroom-1",
         "css": "css/esp32_default.css",
         "image": "devboards_images/esp32-s3-wroom-1.png",
-        "pins": "html/esp32_d1_r32.html"
+        "pins": "html/esp32-s3-wroom-1.html"
     }
 ]
