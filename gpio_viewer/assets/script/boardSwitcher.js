@@ -73,6 +73,7 @@ async function switchBoard() {
     console.log("Selected board:", board); // Debugging line
   
     if (board) {
+      document.getElementById("defaultStyleSheet").href = "css/default.css";
       document.getElementById("boardStyleSheet").href = board.css;
       document.getElementById("boardImage").src = board.image;
   
