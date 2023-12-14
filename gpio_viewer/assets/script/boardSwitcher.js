@@ -66,8 +66,8 @@ async function switchBoard() {
     const selector = document.getElementById("boardSelector");
     const selectedBoardName = selector.value;
   
-    const boardsData = await loadBoardsData();
-    console.log("Loaded boards data:", boardsData); // Debugging line
+    // const boardsData = await loadBoardsData();
+    // console.log("Loaded boards data:", boardsData); // Debugging line
   
     const board = boardsData.find((b) => b.name === selectedBoardName);
     console.log("Selected board:", board); // Debugging line
