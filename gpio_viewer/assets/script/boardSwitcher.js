@@ -80,11 +80,11 @@ async function switchBoard() {
               head.removeChild(existingLinks[i]);
           }
       }
-      
+
       const defaultStyleLink = document.createElement('link');
       defaultStyleLink.rel = 'stylesheet';
       defaultStyleLink.type = 'text/css';
-      defaultStyleLink.href = 'default.css';
+      defaultStyleLink.href = 'css/default.css';
       head.appendChild(defaultStyleLink);
 
       // Now set the board-specific stylesheet
