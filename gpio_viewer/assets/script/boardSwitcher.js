@@ -88,7 +88,8 @@ async function switchBoard() {
       head.appendChild(defaultStyleLink);
 
       // Now set the board-specific stylesheet
-      document.getElementById("boardStyleSheet").href = board.css;
+      defaultStyleLink.href = board.css;
+      head.appendChild(defaultStyleLink);
 
       document.getElementById("boardImage").src = board.image;
   
