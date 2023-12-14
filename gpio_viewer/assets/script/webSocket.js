@@ -4,7 +4,7 @@ function initWebSocket() {
   ws.onmessage = function (event) {
     var states = JSON.parse(event.data);
     for (var gpio in states) {
-      setIndicatorColor("gpio" + gpio, states[v]);
+      setIndicatorColor("gpio" + gpio, states[gpio]);
     }
   };
 }
