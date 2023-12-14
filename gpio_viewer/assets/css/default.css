@@ -41,7 +41,7 @@
   position: relative;
 }
 
-.indicator-off {
+.indicator {
   position: absolute;
   width: 1vw;
   height: 1vw;

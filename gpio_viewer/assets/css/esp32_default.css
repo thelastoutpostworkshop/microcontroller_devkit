@@ -1,8 +1,4 @@
-.indicator-on {
-  width: 1.2vw;
-  height: 1.2vw;
-}
-.indicator-off {
+.indicator {
   width: 1.2vw;
   height: 1.2vw;
 }
