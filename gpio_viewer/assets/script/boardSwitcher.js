@@ -73,24 +73,7 @@ async function switchBoard() {
     console.log("Selected board:", board); // Debugging line
   
     if (board) {
-      const head = document.getElementsByTagName('head')[0];
-      const existingLinks = head.getElementsByTagName('link');
-      for (let i = existingLinks.length - 1; i >= 0; i--) {
-          if (existingLinks[i].getAttribute('rel') === 'stylesheet') {
-              head.removeChild(existingLinks[i]);
-          }
-      }
-
-      const defaultStyleLink = document.createElement('link');
-      defaultStyleLink.rel = 'stylesheet';
-      defaultStyleLink.type = 'text/css';
-      defaultStyleLink.href = 'css/default.css';
-      head.appendChild(defaultStyleLink);
-
-      // Now set the board-specific stylesheet
-      defaultStyleLink.href = board.css;
-      head.appendChild(defaultStyleLink);
-
+      document.getElementById("boardStyleSheet").href = board.css;
       document.getElementById("boardImage").src = board.image;
   
       // Load and replace only the indicators div
