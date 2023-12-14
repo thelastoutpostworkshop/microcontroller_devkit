@@ -19,7 +19,7 @@ async function initializeMenu() {
     if (headerElement) {
       headerElement.insertAdjacentHTML("afterbegin", menuHtml); // Prepend the content to the header element
       await populateMenu(); // Ensure this is called after the HTML snippet is added
-      switchBoard();
+      await switchBoard();
     }
   }
 }
