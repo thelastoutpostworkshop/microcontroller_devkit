@@ -36,13 +36,10 @@ function setIndicatorColor(indicatorId, value) {
   const indicator = document.getElementById(indicatorId);
   if (!indicator) return;
 
-  // Ensure the value is within the range [0, 256]
   value = Math.max(0, Math.min(value, 256));
 
-  // Determine the index for the color array (20 segments)
   const index = Math.floor((value / 256) * (colors.length - 1));
 
-  // Set the background color
   indicator.style.backgroundColor = colors[index];
 }
 
