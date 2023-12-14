@@ -1,3 +1,5 @@
+var boardsData;
+
 async function loadHtmlSnippet(url) {
   try {
     const response = await fetch(url);
@@ -35,7 +37,7 @@ async function loadBoardsData() {
 }
 
 async function populateMenu() {
-  const boardsData = await loadBoardsData();
+  boardsData = await loadBoardsData();
   if (!boardsData) return;
 
   const selector = document.getElementById("boardSelector");
