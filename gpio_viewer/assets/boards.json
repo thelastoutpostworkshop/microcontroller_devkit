@@ -19,7 +19,7 @@
     },
     {
         "name": "esp32-C3-Wroom-02",
-        "css": "css/0_8.css",
+        "css": "css/esp32-C3-Wroom-02.css",
         "image": "devboards_images/esp32-C3-Wroom-02.png",
         "pins": "html/esp32-C3-Wroom-02.html"
     },
