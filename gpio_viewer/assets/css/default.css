@@ -50,3 +50,8 @@
   transform: translate(-50%, -50%);
   background-color: gray;
 }
+
+.large-checkbox {
+  transform: scale(2.2);
+  margin-left: 2%;
+}
