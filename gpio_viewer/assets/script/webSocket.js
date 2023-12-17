@@ -33,14 +33,24 @@ function initWebSocket() {
 }
 
 function setIndicatorColor(indicatorId, value) {
-  const indicator = document.getElementById(indicatorId);
+  // Find the indicator within the 'indicators' section
+  const indicatorSection = document.getElementById('indicators');
+  const indicator = indicatorSection.querySelector('#' + indicatorId);
   if (!indicator) return;
 
+  // Set the color of the indicator
   value = Math.max(0, Math.min(value, 256));
-
   const index = Math.floor((value / 256) * (colors.length - 1));
-
   indicator.style.backgroundColor = colors[index];
+
+  // Find the corresponding value element within the 'values' section
+  const valuesSection = document.getElementById('values');
+  const valueElement = valuesSection.querySelector('#' + indicatorId);
+  if (valueElement) {
+      // Set the text content of the value element
+      valueElement.textContent = value;
+  }
 }
+
 
 window.addEventListener("load", initWebSocket);
