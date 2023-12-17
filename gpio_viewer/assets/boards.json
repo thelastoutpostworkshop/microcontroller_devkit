@@ -7,7 +7,7 @@
     },
     {
         "name": "ESP32-VROOM-32D",
-        "css": "css/0_9.css",
+        "css": "css/ESP32-VROOM-32D.css",
         "image": "devboards_images/ESP32-VROOM-32D.png",
         "pins": "html/ESP32-VROOM-32D.html"
     },
