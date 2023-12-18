@@ -1,4 +1,5 @@
 var boardsData;
+var isValuesVisible = true;
 
 async function loadHtmlSnippet(url) {
   try {
@@ -21,20 +22,21 @@ async function initializeMenu() {
       await populateMenu(); // Ensure this is called after the HTML snippet is added
       await switchBoard();
       document.getElementById("toggleValues").addEventListener("change", function () {
-        toggleValuesVisibility();
+        adjustValuesVisibility();
       });
     }
   }
 }
 
 function toggleValuesVisibility() {
-  const values = document.querySelectorAll('.value');
-  values.forEach(value => {
-      if (value.style.display === 'none') {
-          value.style.display = ''; // Resets to default display value
-      } else {
-          value.style.display = 'none';
-      }
+  isValuesVisible = !isValuesVisible;
+  adjustValuesVisibility();
+}
+
+function adjustValuesVisibility() {
+  const values = document.querySelectorAll(".value");
+  values.forEach((value) => {
+    value.style.display = isValuesVisible ? "" : "none";
   });
 }
 
