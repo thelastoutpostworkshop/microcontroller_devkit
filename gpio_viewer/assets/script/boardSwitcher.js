@@ -104,6 +104,7 @@ async function switchBoard() {
         newIndicatorsElement.innerHTML = pinsHtml;
 
         oldIndicatorsElement.replaceWith(newIndicatorsElement);
+        adjustValuesVisibility();
       } else {
         console.error("Pins HTML or indicators element not found");
       }
