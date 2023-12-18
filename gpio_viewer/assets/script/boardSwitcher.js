@@ -22,7 +22,7 @@ async function initializeMenu() {
       await populateMenu(); // Ensure this is called after the HTML snippet is added
       await switchBoard();
       document.getElementById("toggleValues").addEventListener("change", function () {
-        adjustValuesVisibility();
+        toggleValuesVisibility();
       });
     }
   }
