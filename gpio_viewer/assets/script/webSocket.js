@@ -47,8 +47,8 @@ function setIndicatorColor(indicatorId, state) {
   const valuesSection = document.getElementById("values");
   const valueElement = valuesSection.querySelector("#" + indicatorId);
   if (valueElement) {
-    // Set the text content of the value element
     if (state.t == 0) {
+      // It's a digital pin
       if (state.v == 0) {
         valueElement.textContent = "LOW";
       } else {
