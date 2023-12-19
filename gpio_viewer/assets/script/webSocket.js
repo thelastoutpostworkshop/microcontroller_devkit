@@ -19,7 +19,7 @@ const colors = [
   "#ff8f00",
   "#ff7f00",
   "#ff6f00",
-  "#ff0000"  // Red
+  "#ff0000", // Red
 ];
 
 function initWebSocket() {
@@ -34,8 +34,8 @@ function initWebSocket() {
 
 function setIndicatorColor(indicatorId, state) {
   // Find the indicator within the 'indicators' section
-  const indicatorSection = document.getElementById('indicators');
-  const indicator = indicatorSection.querySelector('#' + indicatorId);
+  const indicatorSection = document.getElementById("indicators");
+  const indicator = indicatorSection.querySelector("#" + indicatorId);
   if (!indicator) return;
 
   // Set the color of the indicator
@@ -44,13 +44,20 @@ function setIndicatorColor(indicatorId, state) {
   indicator.style.backgroundColor = colors[index];
 
   // Find the corresponding value element within the 'values' section
-  const valuesSection = document.getElementById('values');
-  const valueElement = valuesSection.querySelector('#' + indicatorId);
+  const valuesSection = document.getElementById("values");
+  const valueElement = valuesSection.querySelector("#" + indicatorId);
   if (valueElement) {
-      // Set the text content of the value element
+    // Set the text content of the value element
+    if (state.t == 0) {
+      if (state.v == 0) {
+        valueElement.textContent = "LOW";
+      } else {
+        valueElement.textContent = "HIGH";
+      }
+    } else {
       valueElement.textContent = state.v;
+    }
   }
 }
-
 
 window.addEventListener("load", initWebSocket);
