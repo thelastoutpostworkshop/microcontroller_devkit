@@ -1,0 +1,29 @@
+.indicator {
+  width: 0.8vw;
+  height: 0.8vw;
+}
+.value {
+  position: absolute;
+  padding: 5px;
+  /* background-color: rgb(241, 199, 239); */
+  font-size: 1.6vh;
+  min-width: 20%;
+  height: 2%;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: rgb(7, 7, 247);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: left; /* Horizontal alignment */
+}
+.value_right {
+  justify-content: right; /* Horizontal alignment */
+}
+
+/* Media query for small screens (like iPhones) */
+@media screen and (max-width: 1024px) {
+  .indicator {
+    width: 3vw;
+    height: 3vw;
+  }
+}

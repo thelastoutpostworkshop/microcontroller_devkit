@@ -25,7 +25,7 @@
     },
     {
         "name": "esp32-Wroom-32UE",
-        "css": "css/0_8.css",
+        "css": "css/esp32-Wroom-32UE.css",
         "image": "devboards_images/esp32-Wroom-32UE.png",
         "pins": "html/esp32-Wroom-32UE.html"
     }
