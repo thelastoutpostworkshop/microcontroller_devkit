@@ -21,9 +21,9 @@
 }
 
 /* Media query for small screens (like iPhones) */
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .indicator {
-    width: 3vw;
-    height: 3vw;
+    width: 3.5vw;
+    height: 3.5vw;
   }
-} */
+}
