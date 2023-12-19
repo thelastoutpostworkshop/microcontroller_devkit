@@ -9,7 +9,7 @@
   font-size: 1.6vh;
   min-width: 20%;
   height: 2%;
-  font-family: "Lucida Console", monospace; 
+  font-family: "Lucida Console", monospace;
   font-weight: bold;
   color: rgb(7, 7, 247);
   display: flex;
@@ -18,4 +18,12 @@
 }
 .value_right {
   justify-content: right; /* Horizontal alignment */
+}
+
+/* Media query for small screens (like iPhones) */
+@media screen and (max-width: 600px) {
+  .indicator {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
 }
