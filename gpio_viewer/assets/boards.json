@@ -1,7 +1,7 @@
 [
     {
         "name": "ESP32-D1-R32",
-        "css": "css/0_9.css",
+        "css": "css/esp32_d1_r32.css",
         "image": "devboards_images/ESP32_D1_R32.png",
         "pins": "html/esp32_d1_r32.html"
     },
