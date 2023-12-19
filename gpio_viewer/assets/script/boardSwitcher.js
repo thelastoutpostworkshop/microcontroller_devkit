@@ -88,7 +88,7 @@ async function switchBoard() {
   // console.log("Loaded boards data:", boardsData); // Debugging line
 
   const board = boardsData.find((b) => b.name === selectedBoardName);
-  console.log("Selected board:", board); // Debugging line
+  // console.log("Selected board:", board); // Debugging line
 
   if (board) {
     document.getElementById("defaultStyleSheet").href = "css/default.css";
