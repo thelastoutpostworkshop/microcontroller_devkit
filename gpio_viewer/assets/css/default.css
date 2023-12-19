@@ -43,8 +43,6 @@
 
 .indicator {
   position: absolute;
-  width: 1vw;
-  height: 1vw;
   border-radius: 50%;
   padding: 5px;
   transform: translate(-50%, -50%);

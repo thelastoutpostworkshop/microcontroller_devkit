@@ -1,6 +1,6 @@
 .indicator {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 4.5%;
+  height: 2.5%;
 }
 .value {
   position: absolute;
@@ -18,12 +18,4 @@
 }
 .value_right {
   justify-content: right; /* Horizontal alignment */
-}
-
-/* Media query for small screens (like iPhones) */
-@media screen and (max-width: 1024px) {
-  .indicator {
-    width: 3.5vw;
-    height: 3.5vw;
-  }
 }
