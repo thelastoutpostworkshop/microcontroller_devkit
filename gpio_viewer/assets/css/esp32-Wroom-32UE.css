@@ -1,6 +1,6 @@
 .indicator {
-  width: 0.8vw;
-  height: 0.8vw;
+  width: 1.5vw;
+  height: 1.5vw;
 }
 .value {
   position: absolute;
@@ -21,9 +21,9 @@
 }
 
 /* Media query for small screens (like iPhones) */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .indicator {
     width: 3vw;
     height: 3vw;
   }
-}
+} */
