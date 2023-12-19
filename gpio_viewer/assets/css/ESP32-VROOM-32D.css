@@ -23,7 +23,7 @@
 /* Media query for small screens (like iPhones) */
 @media screen and (max-width: 1024px) {
   .indicator {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 3vw;
+    height: 3vw;
   }
 }
