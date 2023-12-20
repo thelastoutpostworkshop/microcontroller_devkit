@@ -32,6 +32,21 @@ function initWebSocket() {
   };
 }
 
+function initEventSource() {
+  var source = new EventSource("/events");
+
+  source.onmessage = function(event) {
+      var states = JSON.parse(event.data);
+      for (var gpio in states) {
+          setIndicatorColor("gpio" + gpio, states[gpio]);
+      }
+  };
+
+  source.onerror = function(error) {
+      console.error("EventSource failed:", error);
+  };
+}
+
 function setIndicatorColor(indicatorId, state) {
   // Find the indicator within the 'indicators' section
   const indicatorSection = document.getElementById("indicators");
@@ -60,4 +75,6 @@ function setIndicatorColor(indicatorId, state) {
   }
 }
 
-window.addEventListener("load", initWebSocket);
+// window.addEventListener("load", initWebSocket);
+window.addEventListener("load", initEventSource);
+
