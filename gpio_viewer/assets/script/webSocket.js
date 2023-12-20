@@ -33,7 +33,7 @@ function initWebSocket() {
 }
 
 function initEventSource() {
-  var source = new EventSource("/events");
+  var source = new EventSource(source);
 
   source.onmessage = function(event) {
       var states = JSON.parse(event.data);
