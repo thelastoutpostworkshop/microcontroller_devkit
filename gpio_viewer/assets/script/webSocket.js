@@ -39,8 +39,8 @@ function setIndicatorColor(indicatorId, state) {
   if (!indicator) return;
 
   // Set the color of the indicator
-  value = Math.max(0, Math.min(state.s, 256));
-  const index = Math.floor((state.s / 256) * (colors.length - 1));
+  value = Math.max(0, Math.min(state.s, 255));
+  const index = Math.floor((state.s / 255) * (colors.length - 1));
   indicator.style.backgroundColor = colors[index];
 
   // Find the corresponding value element within the 'values' section
