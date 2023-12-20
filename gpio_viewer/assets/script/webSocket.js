@@ -34,6 +34,9 @@ function initWebSocket() {
 
 function initEventSource() {
   source.onmessage = function(event) {
+    console.log("Received event:", event);
+    console.log("data:", event.data);
+
       var states = JSON.parse(event.data);
       for (var gpio in states) {
           setIndicatorColor("gpio" + gpio, states[gpio]);
