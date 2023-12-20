@@ -33,6 +33,7 @@ function initWebSocket() {
 }
 
 function initEventSource() {
+  console.log(source);
   source.onmessage = function(event) {
     console.log("Received event:", event);
     console.log("data:", event.data);
