@@ -23,8 +23,6 @@ const colors = [
 ];
 
 function initEventSource() {
-  console.log(source);
-
   source.addEventListener(
     "open",
     function (e) {
