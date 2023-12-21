@@ -1,0 +1,38 @@
+.indicator {
+  width: 4.5%;
+  height: 2.5%;
+  color: white;
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally (within Flexbox) */
+}
+.value {
+  position: absolute;
+  padding: 5px;
+  /* background-color: rgb(241, 199, 239); */
+  font-size: 1.6vh;
+  min-width: 20%;
+  height: 2%;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: rgb(7, 7, 247);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: left; /* Horizontal alignment */
+}
+.value_right {
+  justify-content: right; /* Horizontal alignment */
+}
+.stats {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(8, 246, 24, 0.9);
+  font-size: 1.5vb;
+  height: 2%;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: rgb(7, 7, 247);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+}

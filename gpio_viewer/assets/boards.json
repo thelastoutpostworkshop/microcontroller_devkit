@@ -1,5 +1,11 @@
 [
     {
+        "name": "Generic View",
+        "css": "css/generic.css",
+        "image": "devboards_images/generic.png",
+        "pins": "html/generic.html"
+    },
+    {
         "name": "ESP32-D1-R32",
         "css": "css/esp32_d1_r32.css",
         "image": "devboards_images/ESP32_D1_R32.png",
