@@ -19,3 +19,15 @@
 .value_right {
   justify-content: right; /* Horizontal alignment */
 }
+.stats {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(241, 199, 239, 0.9);
+  font-size: 2vh;
+  height: 2%;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: rgb(7, 7, 247);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+}
