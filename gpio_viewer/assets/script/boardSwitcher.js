@@ -105,7 +105,7 @@ async function switchBoard() {
 
         oldIndicatorsElement.replaceWith(newIndicatorsElement);
         adjustValuesVisibility();
-        document.getElementById("freeRAM").innerHTML = "Free Sketch Space: " + freeSketchSpace;
+        document.getElementById("freeRAM").innerHTML = "Free Sketch:" + freeSketchSpace;
       } else {
         console.error("Pins HTML or indicators element not found");
       }
