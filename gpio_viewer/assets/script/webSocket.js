@@ -78,7 +78,11 @@ function setIndicatorColor(indicatorId, state) {
       if (state.v == 0) {
         valueElement.textContent = "LOW";
       } else {
-        valueElement.textContent = "HIGH";
+        if (state.v == 1) {
+          valueElement.textContent = "HIGH";
+        } else {
+          valueElement.textContent = state.v;
+        }
       }
     } else {
       valueElement.textContent = state.v;
