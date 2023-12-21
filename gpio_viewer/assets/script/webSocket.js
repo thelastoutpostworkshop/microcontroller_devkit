@@ -56,13 +56,6 @@ function initEventSource() {
     },
     false
   );
-  source.addEventListener(
-    "free_ram",
-    function (e) {
-      document.getElementById("freeRAM").innerHTML = "Free RAM: " + e.data;
-    },
-    false
-  );
 }
 
 function setIndicatorColor(indicatorId, state) {
