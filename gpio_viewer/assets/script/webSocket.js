@@ -39,12 +39,30 @@ function initEventSource() {
     },
     false
   );
-  source.addEventListener('gpio-state', function(e) { 
-    var states = JSON.parse(e.data);
-    for (var gpio in states) {
-      setIndicatorColor("gpio" + gpio, states[gpio]);
-    }
-   }, false);
+  source.addEventListener(
+    "gpio-state",
+    function (e) {
+      var states = JSON.parse(e.data);
+      for (var gpio in states) {
+        setIndicatorColor("gpio" + gpio, states[gpio]);
+      }
+    },
+    false
+  );
+  source.addEventListener(
+    "free_heap",
+    function (e) {
+      document.getElementById("freeHeap").innerHTML = "Free Heap: " + e.data;
+    },
+    false
+  );
+  source.addEventListener(
+    "free_ram",
+    function (e) {
+      document.getElementById("freeRAM").innerHTML = "Free RAM: " + e.data;
+    },
+    false
+  );
 }
 
 function setIndicatorColor(indicatorId, state) {
