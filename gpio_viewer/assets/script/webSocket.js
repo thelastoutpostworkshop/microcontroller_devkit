@@ -22,16 +22,6 @@ const colors = [
   "#ff0000", // Red
 ];
 
-function initWebSocket() {
-  ws = new WebSocket("ws://" + window.location.hostname + ":" + serverPort + "/ws");
-  ws.onmessage = function (event) {
-    var states = JSON.parse(event.data);
-    for (var gpio in states) {
-      setIndicatorColor("gpio" + gpio, states[gpio]);
-    }
-  };
-}
-
 function initEventSource() {
   console.log(source);
 
@@ -51,10 +41,8 @@ function initEventSource() {
     },
     false
   );
-  source.addEventListener('gpio-state', function(e) {
-    console.log("data:", event.data);
- 
-    var states = JSON.parse(event.data);
+  source.addEventListener('gpio-state', function(e) { 
+    var states = JSON.parse(e.data);
     for (var gpio in states) {
       setIndicatorColor("gpio" + gpio, states[gpio]);
     }
