@@ -34,19 +34,31 @@ function initWebSocket() {
 
 function initEventSource() {
   console.log(source);
-  source.onmessage = function(event) {
-    console.log("Received event:", event);
-    console.log("data:", event.data);
 
-      var states = JSON.parse(event.data);
-      for (var gpio in states) {
-          setIndicatorColor("gpio" + gpio, states[gpio]);
+  source.addEventListener(
+    "open",
+    function (e) {
+      console.log("Events Connected");
+    },
+    false
+  );
+  source.addEventListener(
+    "error",
+    function (e) {
+      if (e.target.readyState != EventSource.OPEN) {
+        console.log("Events Disconnected");
       }
-  };
-
-  source.onerror = function(error) {
-      console.error("EventSource failed:", error);
-  };
+    },
+    false
+  );
+  source.addEventListener('gpio-state', function(e) {
+    console.log("data:", event.data);
+ 
+    var states = JSON.parse(event.data);
+    for (var gpio in states) {
+      setIndicatorColor("gpio" + gpio, states[gpio]);
+    }
+   }, false);
 }
 
 function setIndicatorColor(indicatorId, state) {
@@ -79,4 +91,3 @@ function setIndicatorColor(indicatorId, state) {
 
 // window.addEventListener("load", initWebSocket);
 window.addEventListener("load", initEventSource);
-
