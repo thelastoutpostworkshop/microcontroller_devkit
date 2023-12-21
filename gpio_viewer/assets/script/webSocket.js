@@ -43,6 +43,7 @@ function initEventSource() {
     "gpio-state",
     function (e) {
       var states = JSON.parse(e.data);
+      console.log(e.data);
       for (var gpio in states) {
         setIndicatorColor("gpio" + gpio, states[gpio]);
       }
