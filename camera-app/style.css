@@ -16,8 +16,8 @@ html, body{
   }
   #camera--trigger{
       width: 200px;
-      background-color: black;
-      color: white;
+      background-color: transparent;
+      color: inherit;
       font-size: 16px;
       border-radius: 30px;
       border: none;
