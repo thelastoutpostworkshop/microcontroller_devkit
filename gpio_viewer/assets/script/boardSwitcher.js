@@ -62,7 +62,8 @@ async function populateMenu() {
     return;
   }
 
-  // Track the index to identify the first element
+  // Get last selected board from cookie
+  const lastSelectedBoard = getCookie('lastSelectedBoard');
   let isFirstOption = true;
 
   boardsData.forEach((board) => {
@@ -70,22 +71,27 @@ async function populateMenu() {
     option.value = board.name;
     option.textContent = board.name;
 
-    // If it's the first option, select it
-    if (isFirstOption) {
+    // Select the option if it was the last selected board
+    if (board.name === lastSelectedBoard) {
       option.selected = true;
       isFirstOption = false;
     }
 
     selector.appendChild(option);
   });
+
+  // If a board was selected from the cookie, switch to it
+  if (lastSelectedBoard) {
+    await switchBoard();
+  }
 }
+
 
 async function switchBoard() {
   const selector = document.getElementById("boardSelector");
   const selectedBoardName = selector.value;
 
-  // const boardsData = await loadBoardsData();
-  // console.log("Loaded boards data:", boardsData); // Debugging line
+  setCookie('lastSelectedBoard', selectedBoardName, 365); 
 
   const board = boardsData.find((b) => b.name === selectedBoardName);
   // console.log("Selected board:", board); // Debugging line
@@ -116,5 +122,27 @@ async function switchBoard() {
     console.error(`Board not found for name: ${selectedBoardName}`);
   }
 }
+
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
 
 window.onload = initializeMenu;
