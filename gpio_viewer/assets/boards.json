@@ -39,6 +39,6 @@
         "name": "Adafruit HUZZAH32",
         "css": "css/adafruit_HUZZAH32.css",
         "image": "devboards_images/adafruit_HUZZAH32.png",
-        "pins": "html/eadafruit_HUZZAH32.html"
+        "pins": "html/adafruit_HUZZAH32.html"
     }
 ]
