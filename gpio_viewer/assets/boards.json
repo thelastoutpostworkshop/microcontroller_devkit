@@ -40,5 +40,11 @@
         "css": "css/adafruit_HUZZAH32.css",
         "image": "devboards_images/adafruit_HUZZAH32.png",
         "pins": "html/adafruit_HUZZAH32.html"
+    },
+    {
+        "name": "Esp32 S2 Mini V1.0.0",
+        "css": "css/Esp32 S2 Mini V1.0.0.css",
+        "image": "devboards_images/Esp32 S2 Mini V1.0.0.png",
+        "pins": "html/Esp32 S2 Mini V1.0.0.html"
     }
 ]
