@@ -12,7 +12,7 @@
         "pins": "html/esp32_d1_r32.html"
     },
     {
-        "name": "ESP32-VROOM-32D",
+        "name": "ESP32-VROOM-32D (38 pins)",
         "css": "css/ESP32-VROOM-32D.css",
         "image": "devboards_images/ESP32-VROOM-32D.png",
         "pins": "html/ESP32-VROOM-32D.html"
