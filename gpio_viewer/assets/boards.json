@@ -18,6 +18,12 @@
         "pins": "html/ESP32-VROOM-32D.html"
     },
     {
+        "name": "ESP32-VROOM-32D (30 pins)",
+        "css": "css/ESP32-VROOM-32D-30pins.css",
+        "image": "devboards_images/ESP32-VROOM-32D-30pins.png",
+        "pins": "html/ESP32-VROOM-32D-30pins.html"
+    },
+    {
         "name": "ESP32-S3-Wroom-1",
         "css": "css/esp32-s3-wroom-1.css",
         "image": "devboards_images/esp32-s3-wroom-1.png",
