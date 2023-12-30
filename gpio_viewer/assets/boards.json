@@ -46,5 +46,11 @@
         "css": "css/Esp32 S2 Mini V1.0.0.css",
         "image": "devboards_images/Esp32 S2 Mini V1.0.0.png",
         "pins": "html/Esp32 S2 Mini V1.0.0.html"
+    },
+    {
+        "name": "ESP32-POE",
+        "css": "css/ESP32-POE.css",
+        "image": "devboards_images/ESP32-POE.png",
+        "pins": "html/ESP32-POE.html"
     }
 ]
