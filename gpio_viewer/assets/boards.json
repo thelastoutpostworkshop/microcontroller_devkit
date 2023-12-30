@@ -52,5 +52,11 @@
         "css": "css/ESP32-POE.css",
         "image": "devboards_images/ESP32-POE.png",
         "pins": "html/ESP32-POE.html"
+    },
+    {
+        "name": "ESP32-C3-Mini",
+        "css": "css/ESP32-C3-Mini.css",
+        "image": "devboards_images/ESP32-C3-Mini.png",
+        "pins": "html/ESP32-C3-Mini.html"
     }
 ]
