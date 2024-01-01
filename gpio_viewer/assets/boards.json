@@ -78,6 +78,12 @@
         "pins": "html/Lilygo-T7-Mini32-v1.5.html"
     },
     {
+        "name": "T-Display S3 AMOLED",
+        "css": "css/T-Display-S3-AMOLED.css",
+        "image": "devboards_images/T-Display-S3-AMOLED.png",
+        "pins": "html/T-Display-S3-AMOLED.html"
+    },
+    {
         "name": "TinyPico V3",
         "css": "css/TinyPico-V3.css",
         "image": "devboards_images/TinyPico-V3.png",
