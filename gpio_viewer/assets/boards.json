@@ -64,5 +64,11 @@
         "css": "css/ESP32-C3-Mini.css",
         "image": "devboards_images/ESP32-C3-Mini.png",
         "pins": "html/ESP32-C3-Mini.html"
+    },
+    {
+        "name": "ESP32 Pico Kit v4.1",
+        "css": "css/esp32-pico-kit-v4.1.css",
+        "image": "devboards_images/esp32-pico-kit-v4.1.png",
+        "pins": "html/esp32-pico-kit-v4.1.html"
     }
 ]
