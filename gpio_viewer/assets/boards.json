@@ -70,5 +70,11 @@
         "css": "css/esp32-pico-kit-v4.1.css",
         "image": "devboards_images/esp32-pico-kit-v4.1.png",
         "pins": "html/esp32-pico-kit-v4.1.html"
+    },
+    {
+        "name": "Wemos Lolin32 Lite V1",
+        "css": "css/Wemos-Lolin32-Lite-V1.css",
+        "image": "devboards_images/Wemos-Lolin32-Lite-V1.png",
+        "pins": "html/eWemos-Lolin32-Lite-V1.html"
     }
 ]
