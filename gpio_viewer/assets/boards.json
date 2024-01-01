@@ -75,6 +75,6 @@
         "name": "Wemos Lolin32 Lite V1",
         "css": "css/Wemos-Lolin32-Lite-V1.css",
         "image": "devboards_images/Wemos-Lolin32-Lite-V1.png",
-        "pins": "html/eWemos-Lolin32-Lite-V1.html"
+        "pins": "html/Wemos-Lolin32-Lite-V1.html"
     }
 ]
