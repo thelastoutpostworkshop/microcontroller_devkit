@@ -78,6 +78,12 @@
         "pins": "html/Lilygo-T7-Mini32-v1.5.html"
     },
     {
+        "name": "TinyPico V3",
+        "css": "css/TinyPico-V3.css",
+        "image": "devboards_images/TinyPico-V3.png",
+        "pins": "html/TinyPico-V3.html"
+    },
+    {
         "name": "Wemos Lolin32 Lite V1",
         "css": "css/Wemos-Lolin32-Lite-V1.css",
         "image": "devboards_images/Wemos-Lolin32-Lite-V1.png",
