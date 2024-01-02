@@ -90,6 +90,12 @@
         "pins": "html/Nano-ESP32.html"
     },
     {
+        "name": "StickLite V3 ESP32S3",
+        "css": "css/StickLite-V3-ESP32S3.css",
+        "image": "devboards_images/StickLite-V3-ESP32S3.png",
+        "pins": "html/StickLite-V3-ESP32S3.html"
+    },
+    {
         "name": "T-Display S3 AMOLED",
         "css": "css/T-Display-S3-AMOLED.css",
         "image": "devboards_images/T-Display-S3-AMOLED.png",
