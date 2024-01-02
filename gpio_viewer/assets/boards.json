@@ -102,6 +102,12 @@
         "pins": "html/T-Display-S3-AMOLED.html"
     },
     {
+        "name": "TinyPICO Nano",
+        "css": "css/TinyPICO-Nano.css",
+        "image": "devboards_images/TinyPICO-Nano.png",
+        "pins": "html/TinyPICO-Nano.html"
+    },
+    {
         "name": "TinyPico V3",
         "css": "css/TinyPico-V3.css",
         "image": "devboards_images/TinyPico-V3.png",
