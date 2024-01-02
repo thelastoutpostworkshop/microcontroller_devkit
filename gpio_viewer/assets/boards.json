@@ -30,13 +30,13 @@
         "pins": "html/esp32-s3-wroom-1.html"
     },
     {
-        "name": "esp32-C3-Wroom-02",
+        "name": "ESP32-C3-Wroom-02",
         "css": "css/esp32-C3-Wroom-02.css",
         "image": "devboards_images/esp32-C3-Wroom-02.png",
         "pins": "html/esp32-C3-Wroom-02.html"
     },
     {
-        "name": "esp32-Wroom-32UE",
+        "name": "ESP32 Wroom-32UE",
         "css": "css/esp32-Wroom-32UE.css",
         "image": "devboards_images/esp32-Wroom-32UE.png",
         "pins": "html/esp32-Wroom-32UE.html"
@@ -54,19 +54,19 @@
         "pins": "html/ESP32-EVB.html"
     },
     {
-        "name": "Esp32 S2 Mini V1.0.0",
+        "name": "ESP32 S2 Mini V1.0.0",
         "css": "css/Esp32 S2 Mini V1.0.0.css",
         "image": "devboards_images/Esp32 S2 Mini V1.0.0.png",
         "pins": "html/Esp32 S2 Mini V1.0.0.html"
     },
     {
-        "name": "ESP32-POE",
+        "name": "ESP32 POE",
         "css": "css/ESP32-POE.css",
         "image": "devboards_images/ESP32-POE.png",
         "pins": "html/ESP32-POE.html"
     },
     {
-        "name": "ESP32-C3-Mini",
+        "name": "ESP32-C3 Mini",
         "css": "css/ESP32-C3-Mini.css",
         "image": "devboards_images/ESP32-C3-Mini.png",
         "pins": "html/ESP32-C3-Mini.html"
@@ -112,5 +112,11 @@
         "css": "css/Wemos-D1-Mini-ESP32.css",
         "image": "devboards_images/Wemos-D1-Mini-ESP32.png",
         "pins": "html/Wemos-D1-Mini-ESP32.html"
+    },
+    {
+        "name": "XIAO ESP32 C3",
+        "css": "css/XIAO-ESP32-C3.css",
+        "image": "devboards_images/XIAO-ESP32-C3.png",
+        "pins": "html/XIAO-ESP32-C3.html"
     }
 ]
