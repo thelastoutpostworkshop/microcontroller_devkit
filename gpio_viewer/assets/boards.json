@@ -48,6 +48,12 @@
         "pins": "html/adafruit_HUZZAH32.html"
     },
     {
+        "name": "ESP32 EVB",
+        "css": "css/ESP32-EVB.css",
+        "image": "devboards_images/ESP32-EVB.png",
+        "pins": "html/ESP32-EVB.html"
+    },
+    {
         "name": "Esp32 S2 Mini V1.0.0",
         "css": "css/Esp32 S2 Mini V1.0.0.css",
         "image": "devboards_images/Esp32 S2 Mini V1.0.0.png",

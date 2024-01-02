@@ -1,0 +1,34 @@
+.indicator {
+  width: 1.7%;
+  height: 1.7%;
+}
+.value {
+  position: absolute;
+  padding: 5px;
+  font-size: 1.5vh;
+  min-width: 15%;
+  height: 1%;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: rgb(6, 23, 175);
+  background-color: rgba(8, 246, 24, 0.9);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: left; /* Horizontal alignment */
+}
+.value_right {
+  justify-content: right; /* Horizontal alignment */
+}
+
+.stats {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(8, 246, 24, 0.9);
+  font-size: 1.6vb;
+  height: 2%;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: rgb(7, 7, 247);
+  display: flex;
+  align-items: center; /* Vertical alignment */
+}
