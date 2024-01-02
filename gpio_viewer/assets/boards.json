@@ -78,6 +78,12 @@
         "pins": "html/Lilygo-T7-Mini32-v1.5.html"
     },
     {
+        "name": "Nano ESP32",
+        "css": "css/Nano-ESP32.css",
+        "image": "devboards_images/Nano-ESP32.png",
+        "pins": "html/Nano-ESP32.html"
+    },
+    {
         "name": "T-Display S3 AMOLED",
         "css": "css/T-Display-S3-AMOLED.css",
         "image": "devboards_images/T-Display-S3-AMOLED.png",
