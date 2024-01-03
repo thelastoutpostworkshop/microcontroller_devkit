@@ -72,20 +72,44 @@ function setIndicatorColor(indicatorId, state) {
   // Find the corresponding value element within the 'values' section
   const valuesSection = document.getElementById("values");
   const valueElement = valuesSection.querySelector("#" + indicatorId);
+  displayValue = "";
+  pinType = "";
   if (valueElement) {
     if (state.t == 0) {
       // It's a digital pin
       if (state.v == 0) {
-        valueElement.textContent = "LOW";
+        displayValue = "LOW";
       } else {
         if (state.v == 1) {
-          valueElement.textContent = "HIGH";
+          displayValue = "HIGH";
         } else {
-          valueElement.textContent = state.v;
+          displayValue = state.v;
         }
       }
     } else {
-      valueElement.textContent = state.v;
+      displayValue = state.v;
+    }
+    switch (state.t) {
+      case 0:
+        pinType = "D";
+        break;
+      case 1:
+        pinType = "P";
+        break;
+      case 2:
+        pinType = "A";
+        break;
+
+      default:
+        pinType = "X";
+        break;
+    }
+    if (valueElement.classList.contains("value_right")) {
+      // Append the letter before the number for 'value value_right'
+      valueElement.textContent = pinType + " " + displayValue;
+    } else {
+      // Append the letter after the number for 'value'
+      valueElement.textContent = displayValue + " " + pinType;
     }
   }
 }
