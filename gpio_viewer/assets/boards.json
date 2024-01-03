@@ -78,6 +78,12 @@
         "pins": "html/esp32-pico-kit-v4.1.html"
     },
     {
+        "name": "Freenove ESP32-s3",
+        "css": "css/Freenove-esp32-s3.css",
+        "image": "devboards_images/Freenove-esp32-s3.png",
+        "pins": "html/Freenove-esp32-s3.html"
+    },
+    {
         "name": "Lilygo T7 Mini32 v1.5",
         "css": "css/Lilygo-T7-Mini32-v1.5.css",
         "image": "devboards_images/Lilygo-T7-Mini32-v1.5.png",
