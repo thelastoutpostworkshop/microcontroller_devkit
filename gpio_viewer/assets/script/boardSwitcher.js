@@ -48,7 +48,7 @@ async function fetchMinRelease() {
 
     const versionResponse = await fetch("version.json");
     const versionData = await versionResponse.json();
-    console.log("Minimum release:", versionData.minRelease);
+    console.log("Minimum release supported by the Web Application:", versionData.minRelease);
 
     const res = compareVersions(versionData.minRelease, currentRelease);
     if (res > 0) {
