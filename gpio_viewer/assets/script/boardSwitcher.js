@@ -19,13 +19,66 @@ async function initializeMenu() {
     const headerElement = document.querySelector(".header"); // Target the header element
     if (headerElement) {
       headerElement.insertAdjacentHTML("afterbegin", menuHtml); // Prepend the content to the header element
-      await populateMenu(); // Ensure this is called after the HTML snippet is added
+      const updateNecessary = await fetchMinRelease();
+      if (updateNecessary) {
+        const updateHtml = await loadHtmlSnippet("html/update.html");
+        headerElement.insertAdjacentHTML("afterbegin", updateHtml); // Prepend the content to the header element
+      }
+      await populateMenu(); 
+      const infoView = document.getElementById("viewinfo");
+      if(infoView) {
+        infoView.innerHTML='<div>Pin Types D=Digital / A=Analog / P=PWM'+' and Sampling interval is '+sampling_interval+'ms'+'</div>';
+      }
       await switchBoard();
       document.getElementById("toggleValues").addEventListener("change", function () {
         toggleValuesVisibility();
       });
     }
   }
+}
+
+async function fetchMinRelease() {
+  const url = "http://" + ip + ":" + serverPort + "/release";
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    const currentRelease = data.release;
+    console.log("Current release:", currentRelease);
+
+    const versionResponse = await fetch("version.json");
+    const versionData = await versionResponse.json();
+    console.log("Minimum release:", versionData.minRelease);
+
+    const res = compareVersions(versionData.minRelease, currentRelease);
+    if (res > 0) {
+      console.log("Update GPIO Viewer");
+      return true;
+    }
+
+    return false; // Return false if no update is needed
+  } catch (error) {
+    console.error("Error fetching release version:", error);
+    return true; // Update is needed
+  }
+}
+
+function compareVersions(version1, version2) {
+  var v1 = version1.split(".").map(Number);
+  var v2 = version2.split(".").map(Number);
+
+  for (var i = 0; i < Math.max(v1.length, v2.length); i++) {
+    var num1 = v1[i] || 0; // Default to 0 if undefined
+    var num2 = v2[i] || 0; // Default to 0 if undefined
+
+    if (num1 < num2) {
+      return -1; // version1 < version2
+    }
+    if (num1 > num2) {
+      return 1; // version1 > version2
+    }
+  }
+  return 0; // version1 == version2
 }
 
 function toggleValuesVisibility() {
@@ -63,7 +116,7 @@ async function populateMenu() {
   }
 
   // Get last selected board from cookie
-  const lastSelectedBoard = getCookie('lastSelectedBoard');
+  const lastSelectedBoard = getCookie("lastSelectedBoard");
   let isFirstOption = true;
 
   boardsData.forEach((board) => {
@@ -86,12 +139,11 @@ async function populateMenu() {
   }
 }
 
-
 async function switchBoard() {
   const selector = document.getElementById("boardSelector");
   const selectedBoardName = selector.value;
 
-  setCookie('lastSelectedBoard', selectedBoardName, 365); 
+  setCookie("lastSelectedBoard", selectedBoardName, 365);
 
   const board = boardsData.find((b) => b.name === selectedBoardName);
   // console.log("Selected board:", board); // Debugging line
@@ -127,7 +179,7 @@ function setCookie(name, value, days) {
   var expires = "";
   if (days) {
     var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     expires = "; expires=" + date.toUTCString();
   }
   document.cookie = name + "=" + (value || "") + expires + "; path=/";
@@ -135,14 +187,13 @@ function setCookie(name, value, days) {
 
 function getCookie(name) {
   var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
+  var ca = document.cookie.split(";");
   for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
-    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    while (c.charAt(0) === " ") c = c.substring(1, c.length);
     if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
   }
   return null;
 }
-
 
 window.onload = initializeMenu;
