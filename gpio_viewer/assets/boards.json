@@ -90,6 +90,12 @@
         "pins": "html/Lilygo-T7-Mini32-v1.5.html"
     },
     {
+        "name": "Lolin D32",
+        "css": "css/Lolin-D32.css",
+        "image": "devboards_images/Lolin-D32.png",
+        "pins": "html/Lolin-D32.html"
+    },
+    {
         "name": "Nano ESP32",
         "css": "css/Nano-ESP32.css",
         "image": "devboards_images/Nano-ESP32.png",
