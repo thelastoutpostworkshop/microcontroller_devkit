@@ -126,6 +126,12 @@
         "pins": "html/TinyPico-V3.html"
     },
     {
+        "name": "TTGO Display V1.1",
+        "css": "css/TTGO-Display-V1.1.css",
+        "image": "devboards_images/TTGO-Display-V1.1.png",
+        "pins": "html/TTGO-Display-V1.1.html"
+    },
+    {
         "name": "Wemos Lolin32 Lite V1",
         "css": "css/Wemos-Lolin32-Lite-V1.css",
         "image": "devboards_images/Wemos-Lolin32-Lite-V1.png",
