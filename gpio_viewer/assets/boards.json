@@ -102,6 +102,12 @@
         "pins": "html/Nano-ESP32.html"
     },
     {
+        "name": "Sailor Hat ESP32",
+        "css": "css/Sailor-Hat-ESP32.css",
+        "image": "devboards_images/Sailor-Hat-ESP32.png",
+        "pins": "html/Sailor-Hat-ESP32.html"
+    },
+    {
         "name": "StickLite V3 ESP32S3",
         "css": "css/StickLite-V3-ESP32S3.css",
         "image": "devboards_images/StickLite-V3-ESP32S3.png",
