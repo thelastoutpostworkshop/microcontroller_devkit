@@ -28,6 +28,9 @@ async function initializeMenu() {
       await populateMenu();
       const infoView = document.getElementById("viewinfo");
       if (infoView) {
+        if (typeof sampling_interval === "undefined") {
+          sampling_interval = "?";
+        }
         infoView.innerHTML =
           "<div>Pin Types D=Digital / A=Analog / P=PWM" +
           " and Sampling interval is " +
@@ -46,7 +49,6 @@ async function initializeMenu() {
 }
 
 async function fetchMinRelease() {
-  
   try {
     const url = "http://" + ip + ":" + serverPort + "/release";
     const response = await fetch(url);
