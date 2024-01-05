@@ -173,6 +173,7 @@ async function switchBoard() {
         newIndicatorsElement.innerHTML = pinsHtml;
 
         oldIndicatorsElement.replaceWith(newIndicatorsElement);
+        setAllIndicatorColor(gpioStates);
         adjustValuesVisibility();
         document.getElementById("freeRAM").innerHTML = "Free Sketch:" + freeSketchSpace;
       } else {

@@ -1,4 +1,5 @@
 var ws;
+var gpioStates = {};
 const colors = [
   "#00ff00", // Green
   "#1fff00",
@@ -43,9 +44,8 @@ function initEventSource() {
     "gpio-state",
     function (e) {
       var states = JSON.parse(e.data);
-      for (var gpio in states) {
-        setIndicatorColor("gpio" + gpio, states[gpio]);
-      }
+      saveBoardStates(states);
+      setAllIndicatorColor(states);
     },
     false
   );
@@ -56,6 +56,20 @@ function initEventSource() {
     },
     false
   );
+}
+
+function saveBoardStates(states) {
+  for (var gpio in states) {
+    if (states.hasOwnProperty(gpio)) {
+      gpioStates[gpio] = states[gpio];
+    }
+  }
+}
+
+function setAllIndicatorColor(states) {
+  for (var gpio in states) {
+    setIndicatorColor("gpio" + gpio, states[gpio]);
+  }
 }
 
 function setIndicatorColor(indicatorId, state) {
@@ -123,8 +137,7 @@ function setIndicatorColor(indicatorId, state) {
       const maxValue = 255;
       const widthPercent = (value / maxValue) * 100;
       bar.style.width = widthPercent + "%";
-  
-   }
+    }
   }
 }
 
