@@ -1,5 +1,6 @@
 var boardsData;
 var isValuesVisible = true;
+var currentGPIOViewerRelease;
 
 async function loadHtmlSnippet(url) {
   try {
@@ -24,10 +25,17 @@ async function initializeMenu() {
         const updateHtml = await loadHtmlSnippet("html/update.html");
         headerElement.insertAdjacentHTML("afterbegin", updateHtml); // Prepend the content to the header element
       }
-      await populateMenu(); 
+      await populateMenu();
       const infoView = document.getElementById("viewinfo");
-      if(infoView) {
-        infoView.innerHTML='<div>Pin Types D=Digital / A=Analog / P=PWM'+' and Sampling interval is '+sampling_interval+'ms'+'</div>';
+      if (infoView) {
+        infoView.innerHTML =
+          "<div>Pin Types D=Digital / A=Analog / P=PWM" +
+          " and Sampling interval is " +
+          sampling_interval +
+          "ms" +
+          " (Run by the GPIOViewer Library Release v" +
+          currentGPIOViewerRelease +
+          ")</div>";
       }
       await switchBoard();
       document.getElementById("toggleValues").addEventListener("change", function () {
@@ -43,14 +51,14 @@ async function fetchMinRelease() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    const currentRelease = data.release;
-    console.log("Current release:", currentRelease);
+    currentGPIOViewerRelease = data.release;
+    console.log("Current release:", currentGPIOViewerRelease);
 
     const versionResponse = await fetch("version.json");
     const versionData = await versionResponse.json();
     console.log("Minimum release supported by the Web Application:", versionData.minRelease);
 
-    const res = compareVersions(versionData.minRelease, currentRelease);
+    const res = compareVersions(versionData.minRelease, currentGPIOViewerRelease);
     if (res > 0) {
       console.log("Update GPIO Viewer");
       return true;
@@ -58,6 +66,7 @@ async function fetchMinRelease() {
 
     return false; // Return false if no update is needed
   } catch (error) {
+    currentGPIOViewerRelease = "1.0.4 or less";
     console.error("Error fetching release version:", error);
     return true; // Update is needed
   }
