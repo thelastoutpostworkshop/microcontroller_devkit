@@ -5,18 +5,19 @@
 .value {
   position: absolute;
   padding: 5px;
-  background-color: rgba(241, 199, 239, 0.75); /* 50% opacity */
   font-size: 1.6vh;
   min-width: 20%;
   height: 2%;
   font-family: "Lucida Console", monospace;
   font-weight: bold;
+  background-color: aqua;
   color: rgb(7, 7, 247);
   display: flex;
   align-items: center; /* Vertical alignment */
   justify-content: left; /* Horizontal alignment */
 }
 .value_right {
+  position: absolute;
   justify-content: right; /* Horizontal alignment */
 }
 .stats {
@@ -30,4 +31,15 @@
   color: rgb(7, 7, 247);
   display: flex;
   align-items: center; /* Vertical alignment */
+}
+.value .value-bar, .value_right .value-bar {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.25); 
+  transition: width 0.5s ease; /* Animate the width change over 0.5 seconds */
+}
+
+.value_right .value-bar {
+  right: 0; /* For right-aligned bars */
 }

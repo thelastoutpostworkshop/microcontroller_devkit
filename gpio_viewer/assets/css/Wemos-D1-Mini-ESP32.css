@@ -10,13 +10,14 @@
   height: 1.4%;
   font-family: "Lucida Console", monospace;
   font-weight: bold;
-  background-color: rgba(17, 239, 69, 1); /* 50% opacity */
+  background-color: aqua;
   color: rgb(6, 23, 175);
   display: flex;
   align-items: center; /* Vertical alignment */
   justify-content: left; /* Horizontal alignment */
 }
 .value_right {
+  position: absolute;
   justify-content: right; /* Horizontal alignment */
 }
 
@@ -31,4 +32,15 @@
   color: rgb(7, 7, 247);
   display: flex;
   align-items: center; /* Vertical alignment */
+}
+.value .value-bar, .value_right .value-bar {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.25); 
+  transition: width 0.5s ease; /* Animate the width change over 0.5 seconds */
+}
+
+.value_right .value-bar {
+  right: 0; /* For right-aligned bars */
 }

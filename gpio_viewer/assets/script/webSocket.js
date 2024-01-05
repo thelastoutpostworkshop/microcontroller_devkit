@@ -105,12 +105,26 @@ function setIndicatorColor(indicatorId, state) {
         break;
     }
     if (valueElement.classList.contains("value_right")) {
-      // Append the letter before the number for 'value value_right'
-      valueElement.textContent = pinType + " " + displayValue;
+      // Update the text in the value-text div for 'value value_right'
+      const valueText = valueElement.querySelector(".value-text");
+      if (valueText) {
+        valueText.textContent = pinType + " " + displayValue;
+      }
     } else {
-      // Append the letter after the number for 'value'
-      valueElement.textContent = displayValue + " " + pinType;
+      // Update the text in the value-text div for 'value'
+      const valueText = valueElement.querySelector(".value-text");
+      if (valueText) {
+        valueText.textContent = displayValue + " " + pinType;
+      }
     }
+
+    const bar = valueElement.querySelector(".value-bar");
+    if (bar) {
+      const maxValue = 255;
+      const widthPercent = (value / maxValue) * 100;
+      bar.style.width = widthPercent + "%";
+  
+   }
   }
 }
 

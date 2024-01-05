@@ -1,5 +1,8 @@
 <div id="indicators">
-  <div class="indicator" style="top: 2%; left: 4%" id="gpio0">0</div>
+  <div class="indicator" style="top: 2%; left: 4%" id="gpio0">
+    <div class="value-bar"></div>
+    <div class="value-text">0</div>
+  </div>
   <div class="indicator" style="top: 6%; left: 4%" id="gpio1">1</div>
   <div class="indicator" style="top: 10%; left: 4%" id="gpio2">2</div>
   <div class="indicator" style="top: 14%; left: 4%" id="gpio3">3</div>
@@ -52,58 +55,208 @@
   <div class="indicator" style="top: 98%; left: 96%" id="gpio49">49</div>
 
   <div id="values">
-    <div class="value" style="top: 0.4%; left: 8%" id="gpio0">0</div>
-    <div class="value" style="top: 4.4%; left: 8%" id="gpio1">0</div>
-    <div class="value" style="top: 8.4%; left: 8%" id="gpio2">0</div>
-    <div class="value" style="top: 12.4%; left: 8%" id="gpio3">0</div>
-    <div class="value" style="top: 16.4%; left: 8%" id="gpio4">0</div>
-    <div class="value" style="top: 20.4%; left: 8%" id="gpio5">0</div>
-    <div class="value" style="top: 24.4%; left: 8%" id="gpio6">0</div>
-    <div class="value" style="top: 28.4%; left: 8%" id="gpio7">0</div>
-    <div class="value" style="top: 32.4%; left: 8%" id="gpio8">0</div>
-    <div class="value" style="top: 36.4%; left: 8%" id="gpio9">0</div>
-    <div class="value" style="top: 40.4%; left: 8%" id="gpio10">0</div>
-    <div class="value" style="top: 44.4%; left: 8%" id="gpio11">0</div>
-    <div class="value" style="top: 48.4%; left: 8%" id="gpio12">0</div>
-    <div class="value" style="top: 52.4%; left: 8%" id="gpio13">0</div>
-    <div class="value" style="top: 56.4%; left: 8%" id="gpio14">0</div>
-    <div class="value" style="top: 60.4%; left: 8%" id="gpio15">0</div>
-    <div class="value" style="top: 64.4%; left: 8%" id="gpio16">0</div>
-    <div class="value" style="top: 68.4%; left: 8%" id="gpio17">0</div>
-    <div class="value" style="top: 72.4%; left: 8%" id="gpio18">0</div>
-    <div class="value" style="top: 76.4%; left: 8%" id="gpio19">0</div>
-    <div class="value" style="top: 80.4%; left: 8%" id="gpio20">0</div>
-    <div class="value" style="top: 84.4%; left: 8%" id="gpio21">0</div>
-    <div class="value" style="top: 88.4%; left: 8%" id="gpio22">0</div>
-    <div class="value" style="top: 92.4%; left: 8%" id="gpio23">0</div>
-    <div class="value" style="top: 96.4%; left: 8%" id="gpio24">0</div>
+    <div class="value value_right" style="top: 0.4%; left: -23%" id="gpio0">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 4.4%; left: -23%" id="gpio1">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 8.4%; left: -23%" id="gpio2">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 12.4%; left: -23%" id="gpio3">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 16.4%; left: -23%" id="gpio4">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 20.4%; left: -23%" id="gpio5">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 24.4%; left: -23%" id="gpio6">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 28.4%; left: -23%" id="gpio7">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 32.4%; left: -23%" id="gpio8">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 36.4%; left: -23%" id="gpio9">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 40.4%; left: -23%" id="gpio10">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 44.4%; left: -23%" id="gpio11">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 48.4%; left: -23%" id="gpio12">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 52.4%; left: -23%" id="gpio13">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 56.4%; left: -23%" id="gpio14">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 60.4%; left: -23%" id="gpio15">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 64.4%; left: -23%" id="gpio16">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 68.4%; left: -23%" id="gpio17">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 72.4%; left: -23%" id="gpio18">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 76.4%; left: -23%" id="gpio19">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 80.4%; left: -23%" id="gpio20">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 84.4%; left: -23%" id="gpio21">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 88.4%; left: -23%" id="gpio22">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 92.4%; left: -23%" id="gpio23">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value value_right" style="top: 96.4%; left: -23%" id="gpio24">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
 
-    <div class="value value_right" style="top: 0.4%; left: 70%" id="gpio25">0</div>
-    <div class="value value_right" style="top: 4.4%; left: 70%" id="gpio26">0</div>
-    <div class="value value_right" style="top: 8.4%; left: 70%" id="gpio27">0</div>
-    <div class="value value_right" style="top: 12.4%; left: 70%" id="gpio28">0</div>
-    <div class="value value_right" style="top: 16.4%; left: 70%" id="gpio29">0</div>
-    <div class="value value_right" style="top: 20.4%; left: 70%" id="gpio30">0</div>
-    <div class="value value_right" style="top: 24.4%; left: 70%" id="gpio31">0</div>
-    <div class="value value_right" style="top: 28.4%; left: 70%" id="gpio32">0</div>
-    <div class="value value_right" style="top: 32.4%; left: 70%" id="gpio33">0</div>
-    <div class="value value_right" style="top: 36.4%; left: 70%" id="gpio34">0</div>
-    <div class="value value_right" style="top: 40.4%; left: 70%" id="gpio35">0</div>
-    <div class="value value_right" style="top: 44.4%; left: 70%" id="gpio36">0</div>
-    <div class="value value_right" style="top: 48.4%; left: 70%" id="gpio37">0</div>
-    <div class="value value_right" style="top: 52.4%; left: 70%" id="gpio38">0</div>
-    <div class="value value_right" style="top: 56.4%; left: 70%" id="gpio39">0</div>
-    <div class="value value_right" style="top: 60.4%; left: 70%" id="gpio40">0</div>
-    <div class="value value_right" style="top: 64.4%; left: 70%" id="gpio41">0</div>
-    <div class="value value_right" style="top: 68.4%; left: 70%" id="gpio42">0</div>
-    <div class="value value_right" style="top: 72.4%; left: 70%" id="gpio43">0</div>
-    <div class="value value_right" style="top: 76.4%; left: 70%" id="gpio44">0</div>
-    <div class="value value_right" style="top: 80.4%; left: 70%" id="gpio45">0</div>
-    <div class="value value_right" style="top: 84.4%; left: 70%" id="gpio46">0</div>
-    <div class="value value_right" style="top: 88.4%; left: 70%" id="gpio47">0</div>
-    <div class="value value_right" style="top: 92.4%; left: 70%" id="gpio48">0</div>
-    <div class="value value_right" style="top: 96.4%; left: 70%" id="gpio49">0</div>
+    <div class="value" style="top: 0.4%; left: 100%" id="gpio25">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 4.4%; left: 100%" id="gpio26">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 8.4%; left: 100%" id="gpio27">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 12.4%; left: 100%" id="gpio28">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 16.4%; left: 100%" id="gpio29">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 20.4%; left: 100%" id="gpio30">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 24.4%; left: 100%" id="gpio31">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 28.4%; left: 100%" id="gpio32">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 32.4%; left: 100%" id="gpio33">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 36.4%; left: 100%" id="gpio34">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 40.4%; left: 100%" id="gpio35">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 44.4%; left: 100%" id="gpio36">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 48.4%; left: 100%" id="gpio37">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 52.4%; left: 100%" id="gpio38">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 56.4%; left: 100%" id="gpio39">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 60.4%; left: 100%" id="gpio40">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 64.4%; left: 100%" id="gpio41">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 68.4%; left: 100%" id="gpio42">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 72.4%; left: 100%" id="gpio43">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 76.4%; left: 100%" id="gpio44">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 80.4%; left: 100%" id="gpio45">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 84.4%; left: 100%" id="gpio46">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 88.4%; left: 100%" id="gpio47">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 92.4%; left: 100%" id="gpio48">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
+    <div class="value" style="top: 96.4%; left: 100%" id="gpio49">
+      <div class="value-bar"></div>
+      <div class="value-text">0</div>
+    </div>
   </div>
-  <div class="stats" style="top: 58%; left: 25%" id="freeHeap">Free Heap: 142.10 KB</div>
-  <div class="stats" style="top: 62%; left: 25%" id="freeRAM">Free Sketch: 1.25 MB</div>
+  <div class="stats" style="top: 58%; left: 15%" id="freeHeap">Free Heap: 142.10 KB</div>
+  <div class="stats" style="top: 62%; left: 15%" id="freeRAM">Free Sketch: 1.25 MB</div>
 </div>
