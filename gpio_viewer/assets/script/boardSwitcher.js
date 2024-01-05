@@ -46,9 +46,9 @@ async function initializeMenu() {
 }
 
 async function fetchMinRelease() {
-  const url = "http://" + ip + ":" + serverPort + "/release";
-
+  
   try {
+    const url = "http://" + ip + ":" + serverPort + "/release";
     const response = await fetch(url);
     const data = await response.json();
     currentGPIOViewerRelease = data.release;
