@@ -128,5 +128,4 @@ function setIndicatorColor(indicatorId, state) {
   }
 }
 
-// window.addEventListener("load", initWebSocket);
 window.addEventListener("load", initEventSource);

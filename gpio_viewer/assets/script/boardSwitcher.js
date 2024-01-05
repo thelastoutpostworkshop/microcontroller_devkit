@@ -207,4 +207,4 @@ function getCookie(name) {
   return null;
 }
 
-window.onload = initializeMenu;
+window.addEventListener("load", initializeMenu);
