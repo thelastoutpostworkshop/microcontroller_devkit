@@ -62,7 +62,7 @@ async function fetchMinRelease() {
 
     const res = compareVersions(versionData.minRelease, currentGPIOViewerRelease);
     if (res > 0) {
-      console.log("Update GPIO Viewer");
+      console.log("Please Update GPIOViewer Library to the latest stable release");
       return true;
     }
 
