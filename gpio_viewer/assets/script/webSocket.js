@@ -24,7 +24,8 @@ const colors = [
 ];
 
 function initEventSource() {
-  console.log("Waiting to connect to ESP32");
+  console.log("Waiting to connect to ESP32: with EventSource: ");
+  console.log(source);
   source.addEventListener(
     "open",
     function (e) {
