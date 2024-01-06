@@ -42,7 +42,10 @@ function initEventSource() {
       source.addEventListener(
         "free_heap",
         function (e) {
-          document.getElementById("freeHeap").innerHTML = "Free Heap:" + e.data;
+          var freeHeap = document.getElementById("freeHeap");
+          if(freeHeap) {
+            freeHeap.innerHTML = "Free Heap:" + e.data;
+          }
         },
         false
       );
