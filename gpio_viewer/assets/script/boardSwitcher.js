@@ -208,4 +208,4 @@ function getCookie(name) {
   return null;
 }
 
-window.addEventListener("load", initializeMenu);
+window.addEventListener("DOMContentLoaded", initializeMenu);

@@ -24,10 +24,27 @@ const colors = [
 ];
 
 function initEventSource() {
+  console.log("Waiting to connect to ESP32");
   source.addEventListener(
     "open",
     function (e) {
       console.log("Events Connected");
+      source.addEventListener(
+        "gpio-state",
+        function (e) {
+          var states = JSON.parse(e.data);
+          saveBoardStates(states);
+          setAllIndicatorColor(states);
+        },
+        false
+      );
+      source.addEventListener(
+        "free_heap",
+        function (e) {
+          document.getElementById("freeHeap").innerHTML = "Free Heap:" + e.data;
+        },
+        false
+      );
     },
     false
   );
@@ -37,22 +54,6 @@ function initEventSource() {
       if (e.target.readyState != EventSource.OPEN) {
         console.log("Events Disconnected");
       }
-    },
-    false
-  );
-  source.addEventListener(
-    "gpio-state",
-    function (e) {
-      var states = JSON.parse(e.data);
-      saveBoardStates(states);
-      setAllIndicatorColor(states);
-    },
-    false
-  );
-  source.addEventListener(
-    "free_heap",
-    function (e) {
-      document.getElementById("freeHeap").innerHTML = "Free Heap:" + e.data;
     },
     false
   );
