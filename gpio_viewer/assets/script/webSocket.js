@@ -45,6 +45,16 @@ function initEventSource() {
     false
   );
   source.addEventListener(
+    "free_psram",
+    function (e) {
+      var freePSRAM = document.getElementById("freePSRAM");
+      if(freePSRAM) {
+        freePSRAM.innerHTML = "Free PSRAM:" + e.data;
+      }
+    },
+    false
+  );
+  source.addEventListener(
     "error",
     function (e) {
       if (e.target.readyState != EventSource.OPEN) {
@@ -130,11 +140,14 @@ function setIndicatorColor(indicatorId, state) {
     }
 
     const bar = valueElement.querySelector(".value-bar");
-    if (bar) {
-      const maxValue = 255;
-      const widthPercent = (value / maxValue) * 100;
-      bar.style.width = widthPercent + "%";
-    }
+    setValueBar(bar,value,255);
+  }
+}
+
+function setValueBar(element,value,maxValue) {
+  if(element) {
+    const widthPercent = (value / maxValue) * 100;
+    element.style.width = widthPercent + "%";
   }
 }
 

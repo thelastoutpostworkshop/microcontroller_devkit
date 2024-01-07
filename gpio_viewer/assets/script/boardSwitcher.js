@@ -48,6 +48,22 @@ async function initializeMenu() {
   }
 }
 
+async function fetchPSRAMSize() {
+  var psramfree = "";
+  try {
+    var freePSRAM = document.getElementById("freePSRAM");
+    const url = "http://" + ip + ":" + serverPort + "/free_psram";
+    const response = await fetch(url);
+    const data = await response.json();
+    psramfree = data.freePSRAM;
+  } catch (error) {
+    psramfree = "Unknown";
+  }
+  if (freePSRAM) {
+    freePSRAM.textContent = "Free PSRAM:" + psramfree;
+  }
+}
+
 async function fetchMinRelease() {
   try {
     const url = "http://" + ip + ":" + serverPort + "/release";
@@ -176,6 +192,7 @@ async function switchBoard() {
         setAllIndicatorColor(gpioStates);
         adjustValuesVisibility();
         document.getElementById("freeRAM").innerHTML = "Free Sketch:" + freeSketchSpace;
+        fetchPSRAMSize();
       } else {
         console.error("Pins HTML or indicators element not found");
       }
