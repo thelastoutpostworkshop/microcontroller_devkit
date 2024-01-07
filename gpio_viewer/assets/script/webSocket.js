@@ -31,6 +31,7 @@ function initEventSource() {
       var states = JSON.parse(e.data);
       saveBoardStates(states);
       setAllIndicatorColor(states);
+      showWifiActivity();
     },
     false
   );
@@ -38,9 +39,10 @@ function initEventSource() {
     "free_heap",
     function (e) {
       var freeHeap = document.getElementById("freeHeap");
-      if(freeHeap) {
+      if (freeHeap) {
         freeHeap.innerHTML = "Free Heap:" + e.data;
       }
+      showWifiActivity();
     },
     false
   );
@@ -48,9 +50,10 @@ function initEventSource() {
     "free_psram",
     function (e) {
       var freePSRAM = document.getElementById("freePSRAM");
-      if(freePSRAM) {
+      if (freePSRAM) {
         freePSRAM.innerHTML = "Free PSRAM:" + e.data;
       }
+      showWifiActivity();
     },
     false
   );
@@ -63,6 +66,19 @@ function initEventSource() {
     },
     false
   );
+}
+
+function showWifiActivity() {
+  const wifi = document.getElementById("wifi-icon");
+  if (wifi) {
+    if (wifi.classList.contains("wifi-icon-dark")) {
+      wifi.classList.remove("wifi-icon-dark", "animate-wifi-dark");
+      wifi.classList.add("wifi-icon-light", "animate-wifi-light");
+    } else {
+      wifi.classList.remove("wifi-icon-light", "animate-wifi-light");
+      wifi.classList.add("wifi-icon-dark", "animate-wifi-dark");
+    }
+  }
 }
 
 function saveBoardStates(states) {
@@ -140,12 +156,12 @@ function setIndicatorColor(indicatorId, state) {
     }
 
     const bar = valueElement.querySelector(".value-bar");
-    setValueBar(bar,value,255);
+    setValueBar(bar, value, 255);
   }
 }
 
-function setValueBar(element,value,maxValue) {
-  if(element) {
+function setValueBar(element, value, maxValue) {
+  if (element) {
     const widthPercent = (value / maxValue) * 100;
     element.style.width = widthPercent + "%";
   }

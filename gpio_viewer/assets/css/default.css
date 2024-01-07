@@ -61,3 +61,26 @@
   background-color: yellow;
   font-size: 1rem;
 }
+
+.wifi-icon-dark {
+  position: absolute;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Subtle glow */
+  transition: filter 0.05s ease-in-out;
+}
+
+.animate-wifi-dark {
+  position: absolute;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)); /* Pronounced glow */
+}
+
+/* Style for light background */
+.wifi-icon-light {
+  position: absolute;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Subtle glow */
+  transition: filter 0.05s ease-in-out;
+}
+
+.animate-wifi-light {
+  position: absolute;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1)); /* Pronounced glow */
+}
