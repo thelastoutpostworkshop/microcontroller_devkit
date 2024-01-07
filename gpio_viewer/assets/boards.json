@@ -144,6 +144,12 @@
         "pins": "html/Wemos-Lolin32-Lite-V1.html"
     },
     {
+        "name": "Wemos Lolin S3 Mini",
+        "css": "css/Wemos-Lolin-S3-Mini.css",
+        "image": "devboards_images/Wemos-Lolin-S3-Mini.png",
+        "pins": "html/Wemos-Lolin-S3-Mini.html"
+    },
+    {
         "name": "Wemos D1 Mini ESP32",
         "css": "css/Wemos-D1-Mini-ESP32.css",
         "image": "devboards_images/Wemos-D1-Mini-ESP32.png",
