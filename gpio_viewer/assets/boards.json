@@ -156,6 +156,12 @@
         "pins": "html/Wemos-D1-Mini-ESP32.html"
     },
     {
+        "name": "Wemos D1 Mini ESP8266",
+        "css": "css/Wemos-D1-Mini-ESP8266.css",
+        "image": "devboards_images/Wemos-D1-Mini-ESP8266.png",
+        "pins": "html/Wemos-D1-Mini-ESP8266.html"
+    },
+    {
         "name": "XIAO ESP32 C3",
         "css": "css/XIAO-ESP32-C3.css",
         "image": "devboards_images/XIAO-ESP32-C3.png",
