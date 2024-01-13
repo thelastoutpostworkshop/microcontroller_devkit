@@ -168,6 +168,12 @@
         "pins": "html/NodeMcu-ESP8266.html"
     },
     {
+        "name": "ESP32-C6 DevKitM",
+        "css": "css/esp32-C6-devkitm.css",
+        "image": "devboards_images/esp32-C6-devkitm.png",
+        "pins": "html/esp32-C6-devkitm.html"
+    },
+    {
         "name": "XIAO ESP32 C3",
         "css": "css/XIAO-ESP32-C3.css",
         "image": "devboards_images/XIAO-ESP32-C3.png",
