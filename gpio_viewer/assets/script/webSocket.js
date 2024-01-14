@@ -112,7 +112,7 @@ function setIndicatorColor(indicatorId, state) {
   displayValue = "";
   pinType = "";
   if (valueElement) {
-    if (state.t == 0) {
+    if (state.t == 0 || state.t > 2) {
       // It's a digital pin
       if (state.v == 0) {
         displayValue = "LOW";
@@ -128,17 +128,25 @@ function setIndicatorColor(indicatorId, state) {
     }
     switch (state.t) {
       case 0:
-        pinType = "D";
+        pinType = "D";  // Digital output or input
         break;
       case 1:
-        pinType = "P";
+        pinType = "P";  // PWM output
         break;
       case 2:
-        pinType = "A";
+        pinType = "A";  // Analog input
         break;
-
+      case 3:
+        pinType = "I";  // Digital input
+        break;
+      case 4:
+        pinType = "U";  // Digital input with pullup
+        break;
+      case 5:
+        pinType = "V";  // Digital input with pulldown
+        break;
       default:
-        pinType = "X";
+        pinType = "X";  // Unknown
         break;
     }
     if (valueElement.classList.contains("value_right")) {
