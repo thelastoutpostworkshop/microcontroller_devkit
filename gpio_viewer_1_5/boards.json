@@ -3,7 +3,7 @@
         "name": "Generic View",
         "css": "css/generic.css",
         "image": "devboards_images/generic.png",
-        "pins": "html/generic.html"
+        "pins": "indicators/generic.json"
     },
     {
         "name": "ESP32-D1-R32",
@@ -45,13 +45,13 @@
         "name": "Adafruit HUZZAH32",
         "css": "css/adafruit_HUZZAH32.css",
         "image": "devboards_images/adafruit_HUZZAH32.png",
-        "pins": "html/adafruit_HUZZAH32.html"
+        "pins": ""
     },
     {
         "name": "ESP32 EVB",
         "css": "css/ESP32-EVB.css",
         "image": "devboards_images/ESP32-EVB.png",
-        "pins": "html/ESP32-EVB.html"
+        "pins": "indicators/ESP32-EVB.json"
     },
     {
         "name": "ESP32 S2 Mini V1.0.0",
