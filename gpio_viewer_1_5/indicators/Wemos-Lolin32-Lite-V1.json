@@ -1,0 +1,48 @@
+{
+  "pins": [
+    { "gpioid": 36, "top": 15.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 39, "top": 20.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 34, "top": 30.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 35, "top": 35.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 32, "top": 40.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 33, "top": 45.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 25, "top": 50.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 26, "top": 55.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 27, "top": 60.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 14, "top": 65.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 12, "top": 70.0, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 22, "top": 20.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 19, "top": 25.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 23, "top": 30.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 18, "top": 35.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 5, "top": 40.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 17, "top": 45.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 16, "top": 50.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 4, "top": 55.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 0, "top": 60.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 2, "top": 65.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 15, "top": 70.0, "left": 95.0, "valueJustify": 0},
+    { "gpioid": 13, "top": 75.0, "left": 95.0, "valueJustify": 0}
+  ],
+  "settings": {
+    "pinWidth": 7.5,
+    "pinHeight": 4,
+    "showPinNumber": false,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 6,
+    "valueFontSize": 1.6
+  },
+  "stats": {
+    "top": 80,
+    "left": 19,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 1,
+    "left": 80,
+    "width": 18,
+    "background": "dark"
+  }
+}

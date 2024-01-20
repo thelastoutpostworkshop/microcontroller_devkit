@@ -1,0 +1,53 @@
+{
+  "pins": [
+    { "gpioid": 2, "top": 29.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 4, "top": 36.3, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 12, "top": 44.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 13, "top": 51.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 11, "top": 58.3, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 10, "top": 66.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 1, "top": 22.0, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 3, "top": 29.0, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 5, "top": 36.3, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 6, "top": 44.0, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 7, "top": 51.0, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 8, "top": 58.3, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 9, "top": 66.0, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 14, "top": 73.0, "left": 14.0, "valueJustify": 0},
+    { "gpioid": 33, "top": 22.0, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 37, "top": 29.0, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 38, "top": 36.3, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 34, "top": 44.0, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 21, "top": 51.0, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 17, "top": 58.3, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 15, "top": 73.0, "left": 80.0, "valueJustify": -1 },
+    { "gpioid": 43, "top": 22.0, "left": 89.5, "valueJustify": 0},
+    { "gpioid": 44, "top": 29.0, "left": 89.5, "valueJustify": 0},
+    { "gpioid": 36, "top": 36.3, "left": 89.5, "valueJustify": 0},
+    { "gpioid": 35, "top": 44.0, "left": 89.5, "valueJustify": 0},
+    { "gpioid": 18, "top": 51.0, "left": 89.5, "valueJustify": 0},
+    { "gpioid": 16, "top": 58.3, "left": 89.5, "valueJustify": 0},
+    { "gpioid": 47, "top": 93.0, "left": 73.5, "valueJustify": 0}
+  ],
+  "settings": {
+    "pinWidth": 7,
+    "pinHeight": 5,
+    "showPinNumber": false,
+    "valueBackGroundColor": "#00ffff",
+    "valueMinWidth": 25,
+    "valuePinMargin": 5,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 4,
+    "left": 30,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 1,
+    "left": 10,
+    "width": 18,
+    "background": "dark"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "pins": [
+    { "gpioid": 36, "top": 17.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 39, "top": 22.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 34, "top": 27.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 35, "top": 32.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 32, "top": 37.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 33, "top": 41.6, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 25, "top": 46.6, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 26, "top": 51.6, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 27, "top": 56.5, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 14, "top": 61.4, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 12, "top": 66.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 13, "top": 71.0, "left": 6.0, "valueJustify": -1 },
+    { "gpioid": 23, "top": 12.0, "left": 94.0, "valueJustify": -1 },
+    { "gpioid": 22, "top": 17.0, "left": 94.0, "valueJustify": -1 },
+    { "gpioid": 1, "top": 22.0, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 3, "top": 27.0, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 21, "top": 32.0, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 19, "top": 36.7, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 18, "top": 41.7, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 5, "top": 46.6, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 17, "top": 51.3, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 16, "top": 56.0, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 4, "top": 61.0, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 2, "top": 66.0, "left": 94.0, "valueJustify": 0},
+    { "gpioid": 15, "top": 71.0, "left": 94.0, "valueJustify": 0}
+  ],
+  "settings": {
+    "pinWidth": 8,
+    "pinHeight": 4,
+    "showPinNumber": false,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 6,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 50,
+    "left": 15,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 1,
+    "left": 20,
+    "width": 15,
+    "background": "dark"
+  }
+}
