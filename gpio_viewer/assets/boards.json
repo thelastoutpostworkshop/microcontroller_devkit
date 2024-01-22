@@ -84,6 +84,11 @@
         "pins": "html/Freenove-esp32-s3.html"
     },
     {
+        "name": "Freenove ESP32-Wroom",
+        "image": "devboards_images/Freenove-esp32-wroom.png",
+        "pins": "indicators/Freenove-esp32-wroom.json"
+    },
+    {
         "name": "Lilygo T7 Mini32 v1.5",
         "css": "css/Lilygo-T7-Mini32-v1.5.css",
         "image": "devboards_images/Lilygo-T7-Mini32-v1.5.png",
