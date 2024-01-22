@@ -85,8 +85,9 @@
     },
     {
         "name": "Freenove ESP32-Wroom",
+        "css": "css/Freenove-esp32-wroom.css",
         "image": "devboards_images/Freenove-esp32-wroom.png",
-        "pins": "indicators/Freenove-esp32-wroom.json"
+        "pins": "html/Freenove-esp32-wroom.html"
     },
     {
         "name": "Lilygo T7 Mini32 v1.5",
