@@ -84,6 +84,12 @@
         "pins": "html/Freenove-esp32-s3.html"
     },
     {
+        "name": "Freenove ESP32-Wroom",
+        "css": "css/Freenove-esp32-wroom.css",
+        "image": "devboards_images/Freenove-esp32-wroom.png",
+        "pins": "html/Freenove-esp32-wroom.html"
+    },
+    {
         "name": "Lilygo T7 Mini32 v1.5",
         "css": "css/Lilygo-T7-Mini32-v1.5.css",
         "image": "devboards_images/Lilygo-T7-Mini32-v1.5.png",
@@ -160,6 +166,12 @@
         "css": "css/Wemos-D1-Mini-ESP8266.css",
         "image": "devboards_images/Wemos-D1-Mini-ESP8266.png",
         "pins": "html/Wemos-D1-Mini-ESP8266.html"
+    },
+    {
+        "name": "WT32-S1-ETH01",
+        "css": "css/WT32-S1.css",
+        "image": "devboards_images/WT32-S1.png",
+        "pins": "html/WT32-S1.html"
     },
     {
         "name": "NodeMcu ESP8266",
