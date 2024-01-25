@@ -1,0 +1,51 @@
+{
+  "pins": [
+    { "gpioid": 36, "top": 22.0, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 39, "top": 26.3, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 34, "top": 30.6, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 35, "top": 35.0, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 32, "top": 39.7, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 33, "top": 44.3, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 25, "top": 48.6, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 26, "top": 53.0, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 27, "top": 57.3, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 14, "top": 62.0, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 12, "top": 66.0, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 13, "top": 75.0, "left": 3.5, "valueJustify": -1 },
+    { "gpioid": 23, "top": 17.3, "left": 96, "valueJustify": 0},
+    { "gpioid": 22, "top": 22.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 1, "top": 26.3, "left": 96, "valueJustify": 0},
+    { "gpioid": 3, "top": 30.6, "left": 96, "valueJustify": 0},
+    { "gpioid": 21, "top": 35.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 19, "top": 44.3, "left": 96, "valueJustify": 0},
+    { "gpioid": 18, "top": 48.6, "left": 96, "valueJustify": 0},
+    { "gpioid": 5, "top": 53.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 17, "top": 57.3, "left": 96, "valueJustify": 0},
+    { "gpioid": 16, "top": 62.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 4, "top": 66.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 0, "top": 71.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 2, "top": 75.0, "left": 96, "valueJustify": 0},
+    { "gpioid": 15, "top": 79.6, "left": 96, "valueJustify": 0}
+  ],
+  "settings": {
+    "pinWidth": 7.5,
+    "pinHeight": 3.5,
+    "showPinNumber": false,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 20,
+    "valuePinMargin": 5,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 1,
+    "left": 15,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 15,
+    "left": 25,
+    "width": 18,
+    "background": "light"
+  }
+}
