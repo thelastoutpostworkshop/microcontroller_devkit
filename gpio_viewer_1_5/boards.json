@@ -5,6 +5,16 @@
         "pins": "indicators/generic.json"
     },
     {
+        "name": "AZ Delivery NodeMCU ESP32",
+        "image": "devboards_images/AZ-Delivery-NodeMCU-ESP32.png",
+        "pins": "indicators/AZ-Delivery-NodeMCU-ESP32.json"
+    },
+    {
+        "name": "ESP32-CAM",
+        "image": "devboards_images/ESP32-CAM.png",
+        "pins": "indicators/ESP32-CAM.json"
+    },
+    {
         "name": "ESP32-D1-R32",
         "image": "devboards_images/ESP32_D1_R32.png",
         "pins": "indicators/esp32_d1_r32.json"
@@ -75,6 +85,11 @@
         "pins": "indicators/Freenove-esp32-wroom.json"
     },
     {
+        "name": "Lilygo-T SIM A7670x",
+        "image": "devboards_images/Lilygo-T-SIM-A7670x.png",
+        "pins": "indicators/Lilygo-T-SIM-A7670x.json"
+    },
+    {
         "name": "Lilygo T7 Mini32 v1.5",
         "image": "devboards_images/Lilygo-T7-Mini32-v1.5.png",
         "pins": "indicators/Lilygo-T7-Mini32-v1.5.json"
@@ -138,6 +153,11 @@
         "name": "Wemos D1 Mini ESP8266",
         "image": "devboards_images/Wemos-D1-Mini-ESP8266.png",
         "pins": "indicators/Wemos-D1-Mini-ESP8266.json"
+    },
+    {
+        "name": "WT32-S1",
+        "image": "devboards_images/WT32-S1.png",
+        "pins": "indicators/WT32-S1.json"
     },
     {
         "name": "NodeMcu ESP8266",

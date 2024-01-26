@@ -1,0 +1,49 @@
+{
+  "pins": [
+    { "gpioid": 32, "top": 14.4, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 33, "top": 16.4, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 34, "top": 18.4, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 35, "top": 20.4, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 25, "top": 22.4, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 26, "top": 24.8, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 27, "top": 27, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 4, "top": 29.2, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 2, "top": 31.3, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 15, "top": 33.5, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 14, "top": 35.6, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 13, "top": 37.9, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 12, "top": 40.2, "left": 8.5, "valueJustify": -1 },
+    { "gpioid": 1, "top": 9.6, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 3, "top": 11.6, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 22, "top": 18.0, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 21, "top": 20.3, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 23, "top": 22.3, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 19, "top": 24.6, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 18, "top": 26.9, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 5, "top": 29, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 39, "top": 31.3, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 36, "top": 33.3, "left": 92.0, "valueJustify": 0 },
+    { "gpioid": 0, "top": 35.6, "left": 92.0, "valueJustify": 0 }
+  ],
+  "settings": {
+    "pinWidth": 5.5,
+    "pinHeight": 2,
+    "showPinNumber": true,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 6,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 15,
+    "left": 15,
+    "fontSize": 1,
+    "gap": 2.5
+  },
+  "wifiFeedback": {
+    "top": 3.5,
+    "left": 27,
+    "width": 15,
+    "background": "dark"
+  }
+}

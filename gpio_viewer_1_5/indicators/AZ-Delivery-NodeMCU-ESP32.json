@@ -1,0 +1,54 @@
+{
+  "pins": [
+    { "gpioid": 34, "top": 27.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 35, "top": 31.5, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 32, "top": 35.5, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 33, "top": 40.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 25, "top": 45.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 26, "top": 49.5, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 27, "top": 54.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 14, "top": 58.5, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 12, "top": 62.5, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 13, "top": 72.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 9, "top": 76.0, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 10, "top": 80.5, "left": 4.5, "valueJustify": -1 },
+    { "gpioid": 23, "top": 13.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 22, "top": 17.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 1, "top": 22.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 3, "top": 26.5, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 21, "top": 31.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 19, "top": 40.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 18, "top": 44.5, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 5, "top": 49.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 17, "top": 54.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 16, "top": 58.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 4, "top": 63.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 0, "top": 67.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 2, "top": 72.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 15, "top": 76.5, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 8, "top": 81.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 7, "top": 85.0, "left": 96.0, "valueJustify": 0 },
+    { "gpioid": 6, "top": 89.5, "left": 96.0, "valueJustify": 0 }
+  ],
+  "settings": {
+    "pinWidth": 8,
+    "pinHeight": 4,
+    "showPinNumber": false,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 6,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 43,
+    "left": 15,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 1,
+    "left": 20,
+    "width": 15,
+    "background": "dark"
+  }
+}
