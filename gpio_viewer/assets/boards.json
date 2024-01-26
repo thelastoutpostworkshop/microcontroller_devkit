@@ -6,6 +6,12 @@
         "pins": "html/generic.html"
     },
     {
+        "name": "AZ Delivery NodeMCU ESP32",
+        "css": "css/AZ-Delivery-NodeMCU-ESP32.css",
+        "image": "devboards_images/AZ-Delivery-NodeMCU-ESP32.png",
+        "pins": "html/AZ-Delivery-NodeMCU-ESP32.html"
+    },
+    {
         "name": "ESP32-D1-R32",
         "css": "css/esp32_d1_r32.css",
         "image": "devboards_images/ESP32_D1_R32.png",
