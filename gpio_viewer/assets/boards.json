@@ -96,6 +96,12 @@
         "pins": "html/Freenove-esp32-wroom.html"
     },
     {
+        "name": "Lilygo T-SIM A7670x",
+        "css": "css/Lilygo-T-SIM-A7670x.css",
+        "image": "devboards_images/Lilygo-T-SIM-A7670x.png",
+        "pins": "html/Lilygo-T-SIM-A7670x.html"
+    },
+    {
         "name": "Lilygo T7 Mini32 v1.5",
         "css": "css/Lilygo-T7-Mini32-v1.5.css",
         "image": "devboards_images/Lilygo-T7-Mini32-v1.5.png",
