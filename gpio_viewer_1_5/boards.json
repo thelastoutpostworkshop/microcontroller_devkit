@@ -168,5 +168,10 @@
         "name": "XIAO ESP32 C3",
         "image": "devboards_images/XIAO-ESP32-C3.png",
         "pins": "indicators/XIAO-ESP32-C3.json"
+    },
+    {
+        "name": "XIAO ESP32 S3",
+        "image": "devboards_images/XIAO-ESP32-S3.png",
+        "pins": "indicators/XIAO-ESP32-S3.json"
     }
 ]
