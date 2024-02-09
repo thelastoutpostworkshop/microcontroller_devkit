@@ -85,6 +85,11 @@
         "pins": "indicators/Freenove-esp32-wroom.json"
     },
     {
+        "name": "Leaf S3",
+        "image": "devboards_images/Leaf-S3.png",
+        "pins": "indicators/Leaf-S3.json"
+    },
+    {
         "name": "Lilygo-T SIM A7670x",
         "image": "devboards_images/Lilygo-T-SIM-A7670x.png",
         "pins": "indicators/Lilygo-T-SIM-A7670x.json"
