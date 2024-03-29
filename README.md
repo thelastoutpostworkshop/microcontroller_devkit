@@ -1,2 +1,2 @@
-# Wep Application Ressources
-This is the repository for web application ressources
+# Wep Application Assets
+This is the repository for web application assets.
