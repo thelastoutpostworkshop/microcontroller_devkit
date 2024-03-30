@@ -70,6 +70,11 @@
         "pins": "indicators/ESP32-C3-Mini.json"
     },
     {
+        "name": "ESP32-C3 Zero",
+        "image": "devboards_images/ESP32-C3-Zero.png",
+        "pins": "indicators/ESP32-C3-Zero.json"
+    },
+    {
         "name": "ESP32 Pico Kit v4.1",
         "image": "devboards_images/esp32-pico-kit-v4.1.png",
         "pins": "indicators/esp32-pico-kit-v4.1.json"
