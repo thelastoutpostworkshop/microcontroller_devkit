@@ -35,6 +35,11 @@
         "pins": "indicators/esp32-s3-wroom-1.json"
     },
     {
+        "name": "ESP32-C3 Super Mini",
+        "image": "devboards_images/ESP32-C3-Super-Mini.png",
+        "pins": "indicators/ESP32-C3-Super-Mini.json"
+    },
+    {
         "name": "ESP32-C3-Wroom-02",
         "image": "devboards_images/esp32-C3-Wroom-02.png",
         "pins": "indicators/esp32-C3-Wroom-02.json"
@@ -118,6 +123,11 @@
         "name": "Sailor Hat ESP32",
         "image": "devboards_images/Sailor-Hat-ESP32.png",
         "pins": "indicators/Sailor-Hat-ESP32.json"
+    },
+    {
+        "name": "Sparkleiot ESP32-C3F",
+        "image": "devboards_images/Sparkleiot-ESP32-C3F.png",
+        "pins": "indicators/Sparkleiot-ESP32-C3F.json"
     },
     {
         "name": "StickLite V3 ESP32S3",
