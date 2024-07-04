@@ -30,6 +30,11 @@
         "pins": "indicators/ESP32-VROOM-32D-30pins.json"
     },
     {
+        "name": "ESP32-S3-DevKitM-1-N8",
+        "image": "devboards_images/ESP32-S3-DevKitM-1-N8.png",
+        "pins": "indicators/ESP32-S3-DevKitM-1-N8.json"
+    },
+    {
         "name": "ESP32-S3-Wroom-1",
         "image": "devboards_images/esp32-s3-wroom-1.png",
         "pins": "indicators/esp32-s3-wroom-1.json"
