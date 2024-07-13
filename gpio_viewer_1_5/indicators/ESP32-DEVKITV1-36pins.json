@@ -41,7 +41,7 @@
     "showPinNumber": false,
     "valueBackGroundColor": "",
     "valueMinWidth": 25,
-    "valuePinMargin": 6,
+    "valuePinMargin": 4,
     "valueFontSize": 1.3
   },
   "stats": {
