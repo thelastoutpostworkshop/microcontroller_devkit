@@ -25,6 +25,11 @@
         "pins": "indicators/ESP32-DEVKITV1-36pins.json"
     },
     {
+        "name": "ESP32 NodeMCU 32S",
+        "image": "devboards_images/ESP32-NodeMCU-32S.png",
+        "pins": "indicators/ESP32-NodeMCU-32S.json"
+    },
+    {
         "name": "ESP32-VROOM-32D (38 pins)",
         "image": "devboards_images/ESP32-VROOM-32D.png",
         "pins": "indicators/ESP32-VROOM-32D.json"
