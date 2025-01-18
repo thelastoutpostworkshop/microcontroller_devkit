@@ -1,0 +1,55 @@
+{
+  "pins": [
+    { "gpioid": 19, "top": 27, "left": 12, "valueJustify": -1 },
+    { "gpioid": 18, "top": 30, "left": 12, "valueJustify": -1 },
+    { "gpioid": 17, "top": 33, "left": 12, "valueJustify": -1 },
+    { "gpioid": 16, "top": 36, "left": 12, "valueJustify": -1 },
+    { "gpioid": 15, "top": 39, "left": 12, "valueJustify": -1 },
+    { "gpioid": 14, "top": 42, "left": 12, "valueJustify": -1 },
+    { "gpioid": 13, "top": 45, "left": 12, "valueJustify": -1 },
+    { "gpioid": 12, "top": 48, "left": 12, "valueJustify": -1 },
+    { "gpioid": 11, "top": 51, "left": 12, "valueJustify": -1 },
+    { "gpioid": 10, "top": 54, "left": 12, "valueJustify": -1 },
+    { "gpioid": 9, "top": 57, "left": 12, "valueJustify": -1 },
+    { "gpioid": 8, "top": 60, "left": 12, "valueJustify": -1 },
+    { "gpioid": 7, "top": 63, "left": 12, "valueJustify": -1 },
+    { "gpioid": 6, "top": 66, "left": 12, "valueJustify": -1 },
+    { "gpioid": 5, "top": 69, "left": 12, "valueJustify": -1 },
+    { "gpioid": 4, "top": 72, "left": 12, "valueJustify": -1 },
+    { "gpioid": 3, "top": 75, "left": 12, "valueJustify": -1 },
+    { "gpioid": 2, "top": 78, "left": 12, "valueJustify": -1 },
+
+    { "gpioid": 20, "top": 48, "left": 90, "valueJustify": 0 },
+    { "gpioid": 21, "top": 51, "left": 90, "valueJustify": 0 },
+    { "gpioid": 22, "top": 54, "left": 90, "valueJustify": 0 },
+    { "gpioid": 23, "top": 57, "left": 90, "valueJustify": 0 },
+    { "gpioid": 32, "top": 60, "left": 90, "valueJustify": 0 },
+    { "gpioid": 33, "top": 63, "left": 90, "valueJustify": 0 },
+    { "gpioid": 46, "top": 66, "left": 90, "valueJustify": 0 },
+    { "gpioid": 47, "top": 69, "left": 90, "valueJustify": 0 },
+    { "gpioid": 48, "top": 72, "left": 90, "valueJustify": 0 },
+    { "gpioid": 53, "top": 75, "left": 90, "valueJustify": 0 },
+    { "gpioid": 54, "top": 78, "left": 90, "valueJustify": 0 }
+  ],
+  "settings": {
+    "pinWidth": 7,
+    "pinHeight": 2.5,
+    "showPinNumber": true,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 8,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 85,
+    "left": 15,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 15,
+    "left": 41,
+    "width": 15,
+    "background": "light"
+  }
+}

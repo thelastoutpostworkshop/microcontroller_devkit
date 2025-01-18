@@ -150,6 +150,11 @@
         "pins": "indicators/nanoESP32-C6.json"
     },
     {
+        "name": "Olimex ESP32-P4",
+        "image": "devboards_images/Olimex-ESP32-P4.png",
+        "pins": "indicators/Olimex-ESP32-P4.json"
+    },
+    {
         "name": "Sailor Hat ESP32",
         "image": "devboards_images/Sailor-Hat-ESP32.png",
         "pins": "indicators/Sailor-Hat-ESP32.json"
