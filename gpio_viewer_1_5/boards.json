@@ -10,6 +10,11 @@
         "pins": "indicators/AZ-Delivery-NodeMCU-ESP32.json"
     },
     {
+        "name": "Cheap Yellow Display (ESP32-2432S028)",
+        "image": "devboards_images/ESP32-2432S028.png",
+        "pins": "indicators/ESP32-2432S028.json"
+    },
+    {
         "name": "ESP32-CAM",
         "image": "devboards_images/ESP32-CAM.png",
         "pins": "indicators/ESP32-CAM.json"
