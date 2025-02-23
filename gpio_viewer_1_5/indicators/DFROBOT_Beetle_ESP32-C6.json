@@ -1,0 +1,38 @@
+{
+  "pins": [
+    { "gpioid": 4, "top": 34, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 5, "top": 44, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 23, "top": 53.5, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 22, "top": 63, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 21, "top": 72.5, "left": 6.5, "valueJustify": -1 },
+    { "gpioid": 7, "top": 82, "left": 6.5, "valueJustify": -1 },
+
+    { "gpioid": 17, "top": 44, "left": 93.0, "valueJustify": 0},
+    { "gpioid": 16, "top": 53.5, "left": 93.0, "valueJustify": 0},
+    { "gpioid": 19, "top": 63, "left": 93.0, "valueJustify": 0},
+    { "gpioid": 20, "top": 72.5, "left": 93.0, "valueJustify": 0},
+    { "gpioid": 6, "top": 82, "left": 93.0, "valueJustify": 0}
+
+  ],
+  "settings": {
+    "pinWidth": 7.5,
+    "pinHeight": 5.5,
+    "showPinNumber": false,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 8,
+    "valueFontSize": 1.6
+  },
+  "stats": {
+    "top": 8,
+    "left": 15,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 46,
+    "left": 45,
+    "width": 18,
+    "background": "dark"
+  }
+}
