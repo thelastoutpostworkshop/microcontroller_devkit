@@ -65,6 +65,16 @@
         "pins": "indicators/esp32-s3-wroom-1.json"
     },
     {
+        "name": "ESP32-C3 Mini",
+        "image": "devboards_images/ESP32-C3-Mini.png",
+        "pins": "indicators/ESP32-C3-Mini.json"
+    },
+    {
+        "name": "ESP32-C3 Mini-1",
+        "image": "devboards_images/ESP32-C3-Mini-1.png",
+        "pins": "indicators/esp32-C3-mini-1.json"
+    },
+    {
         "name": "ESP32-C3 Super Mini",
         "image": "devboards_images/ESP32-C3-Super-Mini.png",
         "pins": "indicators/ESP32-C3-Super-Mini.json"
@@ -98,11 +108,6 @@
         "name": "ESP32 POE",
         "image": "devboards_images/ESP32-POE.png",
         "pins": "indicators/ESP32-POE.json"
-    },
-    {
-        "name": "ESP32-C3 Mini",
-        "image": "devboards_images/ESP32-C3-Mini.png",
-        "pins": "indicators/ESP32-C3-Mini.json"
     },
     {
         "name": "ESP32-C3 Zero",
