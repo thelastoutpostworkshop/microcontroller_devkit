@@ -35,6 +35,11 @@
         "pins": "indicators/ESP32-DEVKITV1-36pins.json"
     },
     {
+        "name": "ESP32 C5 DEVKIT V1",
+        "image": "devboards_images/ESP32-C5-DevKitC-1.png",
+        "pins": "indicators/eps32c5v1.json"
+    },
+    {
         "name": "ESP32 NodeMCU 32S",
         "image": "devboards_images/ESP32-NodeMCU-32S.png",
         "pins": "indicators/ESP32-NodeMCU-32S.json"
