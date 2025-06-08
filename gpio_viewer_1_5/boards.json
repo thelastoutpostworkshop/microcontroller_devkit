@@ -200,6 +200,11 @@
         "pins": "indicators/StickLite-V3-ESP32S3.json"
     },
     {
+        "name": "SOC ESP32 WROOM 32",
+        "image": "devboards_images/SOC-ESP32-WROOM-32.png",
+        "pins": "indicators/SOC-ESP32-WROOM-32.json"
+    },
+    {
         "name": "T-Display S3 AMOLED",
         "image": "devboards_images/T-Display-S3-AMOLED.png",
         "pins": "indicators/T-Display-S3-AMOLED.json"

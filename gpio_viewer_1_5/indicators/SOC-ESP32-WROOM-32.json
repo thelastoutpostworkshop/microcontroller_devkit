@@ -1,0 +1,59 @@
+{
+  "pins": [
+    { "gpioid": 36, "top": 39.6, "left": 6, "valueJustify": -1 },
+    { "gpioid": 39, "top": 44.6, "left": 6, "valueJustify": -1 },
+    { "gpioid": 34, "top": 49.6, "left": 6, "valueJustify": -1 },
+    { "gpioid": 35, "top": 54.5, "left": 6, "valueJustify": -1 },
+    { "gpioid": 32, "top": 59.5, "left": 6, "valueJustify": -1 },
+    { "gpioid": 33, "top": 64.3, "left": 6, "valueJustify": -1 },
+    { "gpioid": 25, "top": 69.3, "left": 6, "valueJustify": -1 },
+    { "gpioid": 26, "top": 74.2, "left": 6, "valueJustify": -1 },
+    { "gpioid": 27, "top": 79.2, "left": 6, "valueJustify": -1 },
+    { "gpioid": 14, "top": 84.2, "left": 6, "valueJustify": -1 },
+    { "gpioid": 12, "top": 89.2, "left": 6, "valueJustify": -1 },
+
+    { "gpioid": 23, "top": 29.6, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 22, "top": 34.6, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 1, "top": 39.6, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 3, "top": 44.6, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 21, "top": 49.6, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 19, "top": 59.5, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 18, "top": 64.3, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 5, "top": 69.3, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 17, "top": 74.2, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 16, "top": 79.2, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 4, "top": 84.2, "left": 94.5, "valueJustify": 0 },
+    { "gpioid": 0, "top": 89.2, "left": 94.5, "valueJustify": 0 },
+
+    { "gpioid": 13, "top": 95, "left": 23, "valueJustify": -2 },
+    { "gpioid": 9, "top": 95, "left": 31, "valueJustify": -2 },
+    { "gpioid": 10, "top": 95, "left": 38.8, "valueJustify": -2 },
+    { "gpioid": 11, "top": 95, "left": 46.6, "valueJustify": -2 },
+    { "gpioid": 2, "top": 95, "left": 54.2, "valueJustify": -2 },
+    { "gpioid": 15, "top": 95, "left": 62, "valueJustify": -2 },
+    { "gpioid": 8, "top": 95, "left": 69.8, "valueJustify": -2 },
+    { "gpioid": 7, "top": 95, "left": 77.6, "valueJustify": -2 },
+    { "gpioid": 6, "top": 95, "left": 85.3, "valueJustify": -2 }
+  ],
+  "settings": {
+    "pinWidth": 6,
+    "pinHeight": 4,
+    "showPinNumber": true,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 4,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 43,
+    "left": 15,
+    "fontSize": 1.6,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 5,
+    "left": 42,
+    "width": 15,
+    "background": "dark"
+  }
+}
