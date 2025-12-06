@@ -89,12 +89,14 @@ class LittleFSClient {
         const result = this.exports.lfsjs_format();
         this.assertOk(result, "format filesystem");
     }
-    list() {
+    list(path = "/") {
+        const normalizedPath = normalizePathOptional(path);
+        const pathPtr = this.allocString(normalizedPath);
         let capacity = this.listBufferSize;
         while (true) {
             const ptr = this.alloc(capacity);
             try {
-                const used = this.exports.lfsjs_list(ptr, capacity);
+                const used = this.exports.lfsjs_list(pathPtr, ptr, capacity);
                 if (used === LFS_ERR_NOSPC) {
                     this.listBufferSize = capacity * 2;
                     capacity = this.listBufferSize;
@@ -113,6 +115,9 @@ class LittleFSClient {
         }
     }
     addFile(path, data) {
+        this.writeFile(path, data);
+    }
+    writeFile(path, data) {
         const normalizedPath = normalizePath(path);
         const payload = asUint8Array(data, this.encoder);
         const pathPtr = this.allocString(normalizedPath);
@@ -127,15 +132,44 @@ class LittleFSClient {
             this.exports.free(pathPtr);
         }
     }
-    deleteFile(path) {
+    delete(path, options) {
+        const recursive = options?.recursive === true;
         const normalizedPath = normalizePath(path);
         const pathPtr = this.allocString(normalizedPath);
         try {
-            const result = this.exports.lfsjs_delete_file(pathPtr);
-            this.assertOk(result, `delete file "${normalizedPath}"`);
+            const result = this.exports.lfsjs_remove(pathPtr, recursive ? 1 : 0);
+            this.assertOk(result, `delete "${normalizedPath}"${recursive ? " (recursive)" : ""}`);
         }
         finally {
             this.exports.free(pathPtr);
+        }
+    }
+    deleteFile(path) {
+        this.delete(path);
+    }
+    mkdir(path) {
+        const normalizedPath = normalizePath(path);
+        const pathPtr = this.allocString(normalizedPath);
+        try {
+            const result = this.exports.lfsjs_mkdir(pathPtr);
+            this.assertOk(result, `mkdir "${normalizedPath}"`);
+        }
+        finally {
+            this.exports.free(pathPtr);
+        }
+    }
+    rename(oldPath, newPath) {
+        const from = normalizePath(oldPath);
+        const to = normalizePath(newPath);
+        const fromPtr = this.allocString(from);
+        const toPtr = this.allocString(to);
+        try {
+            const result = this.exports.lfsjs_rename(fromPtr, toPtr);
+            this.assertOk(result, `rename "${from}" -> "${to}"`);
+        }
+        finally {
+            this.exports.free(fromPtr);
+            this.exports.free(toPtr);
         }
     }
     toImage() {
@@ -259,10 +293,11 @@ function parseListPayload(payload) {
         .split("\n")
         .filter((line) => line.length > 0)
         .map((line) => {
-        const [rawPath, rawSize] = line.split("\t");
+        const [rawPath, rawSize, rawType] = line.split("\t");
         return {
             path: rawPath ?? "",
             size: Number(rawSize ?? "0") || 0,
+            type: rawType === "d" ? "dir" : "file"
         };
     });
 }
@@ -273,8 +308,19 @@ function normalizePath(input) {
         throw new Error("Path must point to a file (e.g. \"docs/readme.txt\")");
     }
     const collapsed = withoutRoot.replace(/\/{2,}/g, "/");
-    const clean = collapsed.endsWith("/") ? collapsed.slice(0, -1) : collapsed;
+    const parts = collapsed.split("/").filter(Boolean);
+    if (parts.some((segment) => segment === "..")) {
+        throw new Error("Path must not contain '..'");
+    }
+    const clean = parts.join("/");
     return clean;
+}
+function normalizePathOptional(input) {
+    const trimmed = input.trim();
+    if (trimmed === "" || trimmed === "/") {
+        return "/";
+    }
+    return `/${normalizePath(trimmed)}`;
 }
 function asUint8Array(source, encoder) {
     if (typeof source === "string") {
