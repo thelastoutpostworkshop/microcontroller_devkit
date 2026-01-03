@@ -1,0 +1,53 @@
+{
+  "pins": [
+    { "gpioid": 11, "top": 5.0, "left": 6, "valueJustify": -1 },
+    { "gpioid": 12, "top": 9.7, "left": 6, "valueJustify": -1 },
+    { "gpioid": 13, "top": 19.4, "left": 6, "valueJustify": -1 },
+    { "gpioid": 14, "top": 24.3, "left": 6, "valueJustify": -1 },
+    { "gpioid": 15, "top": 29.2, "left": 6, "valueJustify": -1 },
+    { "gpioid": 16, "top": 34.1, "left": 6, "valueJustify": -1 },
+    { "gpioid": 17, "top": 43.8, "left": 6, "valueJustify": -1 },
+    { "gpioid": 18, "top": 48.6, "left": 6, "valueJustify": -1 },
+    { "gpioid": 33, "top": 53.5, "left": 6, "valueJustify": -1 },
+    { "gpioid": 34, "top": 58.4, "left": 6, "valueJustify": -1 },
+    { "gpioid": 35, "top": 68.1, "left": 6, "valueJustify": -1 },
+    { "gpioid": 36, "top": 72.9, "left": 6, "valueJustify": -1 },
+    { "gpioid": 37, "top": 77.2, "left": 6, "valueJustify": -1 },
+    { "gpioid": 38, "top": 82, "left": 6, "valueJustify": -1 },
+    { "gpioid": 39, "top": 92, "left": 6, "valueJustify": -1 },
+    { "gpioid": 40, "top": 96.2, "left": 6, "valueJustify": -1 },
+
+    { "gpioid": 10, "top": 29.0, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 9, "top": 38.8, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 8, "top": 43.7, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 7, "top": 48.6, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 6, "top": 58, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 5, "top": 67.8, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 4, "top": 72.5, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 2, "top": 77.3, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 1, "top": 82.2, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 41, "top": 92, "left": 94.0, "valueJustify": 0 },
+    { "gpioid": 42, "top": 96.8, "left": 94.0, "valueJustify": 0 }
+  ],
+  "settings": {
+    "pinWidth": 11,
+    "pinHeight": 3,
+    "showPinNumber": false,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 25,
+    "valuePinMargin": 6,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 40,
+    "left": 18,
+    "fontSize": 1.4,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 1,
+    "left": 35,
+    "width": 18,
+    "background": "dark"
+  }
+}
