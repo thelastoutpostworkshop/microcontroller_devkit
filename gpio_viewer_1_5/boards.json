@@ -60,6 +60,16 @@
         "pins": "indicators/ESP32-S3-DevKitM-1-N8.json"
     },
     {
+        "name": "ESP32-S3-Pico",
+        "image": "devboards_images/ESP32-S3-Pico.png",
+        "pins": "indicators/ESP32-S3-Pico.json"
+    },
+    {
+        "name": "Waveshare ESP32-S3 Dev Kit C",
+        "image": "devboards_images/Waveshare-ESP32-S3-Dev-Kit-C.png",
+        "pins": "indicators/Waveshare-ESP32-S3-Dev-Kit-C.json"
+    },
+    {
         "name": "ESP32-S3-Wroom-1",
         "image": "devboards_images/esp32-s3-wroom-1.png",
         "pins": "indicators/esp32-s3-wroom-1.json"
