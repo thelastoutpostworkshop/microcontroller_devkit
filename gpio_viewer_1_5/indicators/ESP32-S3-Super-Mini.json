@@ -1,0 +1,62 @@
+{
+  "pins": [
+    { "gpioid": 1, "top": 16.6, "left": 6.1, "valueJustify": -1 },
+    { "gpioid": 2, "top": 21.3, "left": 6.1, "valueJustify": -1 },
+    { "gpioid": 3, "top": 26.3, "left": 6.1, "valueJustify": -1 },
+    { "gpioid": 4, "top": 31.3, "left": 6.1, "valueJustify": -1 },
+    { "gpioid": 5, "top": 36.3, "left": 6.1, "valueJustify": -1 },
+    { "gpioid": 6, "top": 41.3, "left": 6.1, "valueJustify": -1 },
+    { "gpioid": 7, "top": 46.3, "left": 6.1, "valueJustify": -1 },
+
+    { "gpioid": 13, "top": 21.3, "left": 92, "valueJustify": 0 },
+    { "gpioid": 12, "top": 26.3, "left": 92, "valueJustify": 0 },
+    { "gpioid": 11, "top": 31.3, "left": 92, "valueJustify": 0 },
+    { "gpioid": 10, "top": 36.3, "left": 92, "valueJustify": 0 },
+    { "gpioid": 9, "top": 41.3, "left": 92, "valueJustify": 0 },
+    { "gpioid": 8, "top": 46.3, "left": 92, "valueJustify": 0 },
+
+    { "gpioid": 34, "top": 68, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 33, "top": 71.7, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 21, "top": 74.9, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 18, "top": 78.5, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 17, "top": 82, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 16, "top": 85.5, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 15, "top": 89, "left": 18.4, "valueJustify": -1 },
+    { "gpioid": 14, "top": 92, "left": 18.4, "valueJustify": -1 },
+    
+    { "gpioid": 38, "top": 68, "left": 33.5, "valueJustify": 0 },
+    { "gpioid": 37, "top": 71.7, "left": 33.5, "valueJustify": 0 },
+    { "gpioid": 36, "top": 74.9, "left": 33.5, "valueJustify": 0 },
+    { "gpioid": 35, "top": 78.5, "left": 33.5, "valueJustify": 0 },
+
+    { "gpioid": 48, "top": 68, "left": 80, "valueJustify": 0 },
+    { "gpioid": 47, "top": 71.7, "left": 80, "valueJustify": 0 },
+    { "gpioid": 46, "top": 74.9, "left": 80, "valueJustify": 0 },
+    { "gpioid": 45, "top": 78.5, "left": 80, "valueJustify": 0 },
+    { "gpioid": 42, "top": 82, "left": 80, "valueJustify": 0 },
+    { "gpioid": 41, "top": 85.5, "left": 80, "valueJustify": 0 },
+    { "gpioid": 40, "top": 89, "left": 80, "valueJustify": 0 },
+    { "gpioid": 39, "top": 92, "left": 80, "valueJustify": 0 }
+  ],
+  "settings": {
+    "pinWidth": 8,
+    "pinHeight": 3,
+    "showPinNumber": true,
+    "valueBackGroundColor": "#00ffff",
+    "valueMinWidth": 25,
+    "valuePinMargin": 7,
+    "valueFontSize": 1.3
+  },
+  "stats": {
+    "top": 30,
+    "left": 18,
+    "fontSize": 1.4,
+    "gap": 4
+  },
+  "wifiFeedback": {
+    "top": 1,
+    "left": 35,
+    "width": 18,
+    "background": "dark"
+  }
+}

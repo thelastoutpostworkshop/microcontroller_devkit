@@ -65,6 +65,11 @@
         "pins": "indicators/ESP32-S3-Pico.json"
     },
     {
+        "name": "ESP32-S3 Super Mini",
+        "image": "devboards_images/ESP32-S3-Super-Mini.png",
+        "pins": "indicators/ESP32-S3-Super-Mini.json"
+    },
+    {
         "name": "Waveshare ESP32-S3 Dev Kit C",
         "image": "devboards_images/Waveshare-ESP32-S3-Dev-Kit-C.png",
         "pins": "indicators/Waveshare-ESP32-S3-Dev-Kit-C.json"
