@@ -135,6 +135,11 @@
         "pins": "indicators/ESP32-C6-Zero.json"
     },
     {
+        "name": "ESP32-C6 Super Mini",
+        "image": "devboards_images/ESP32-C6-Super-Mini.png",
+        "pins": "indicators/ESP32-C6-Super-Mini.json"
+    },
+    {
         "name": "ESP32 Pico Kit v4.1",
         "image": "devboards_images/esp32-pico-kit-v4.1.png",
         "pins": "indicators/esp32-pico-kit-v4.1.json"
@@ -198,6 +203,11 @@
         "name": "ESP32-S3 Zero",
         "image": "devboards_images/ESP32-S3-Zero-S3FH4R2.png",
         "pins": "indicators/ESP32-S3-Zero-S3FH4R2.json"
+    },
+    {
+        "name": "FireBeetle 2 ESP32-S3 (N4)",
+        "image": "devboards_images/FireBeetle-2-ESP32-S3-N4.png",
+        "pins": "indicators/FireBeetle-2-ESP32-S3-N4.json"
     },
     {
         "name": "Sailor Hat ESP32",

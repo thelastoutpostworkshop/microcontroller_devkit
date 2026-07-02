@@ -1,0 +1,55 @@
+{
+  "pins": [
+    { "gpioid": 17, "top": 41.93, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 15, "top": 46.03, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 16, "top": 50.17, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 2, "top": 54.28, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 1, "top": 58.37, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 0, "top": 62.45, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 9, "top": 66.55, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 18, "top": 70.68, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 7, "top": 74.72, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 38, "top": 78.86, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 3, "top": 82.97, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 43, "top": 87.06, "left": 1.42, "valueJustify": -1 },
+    { "gpioid": 44, "top": 91.21, "left": 1.42, "valueJustify": -1 },
+
+    { "gpioid": 47, "top": 50.17, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 11, "top": 54.28, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 10, "top": 58.37, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 8, "top": 62.45, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 6, "top": 66.55, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 5, "top": 70.66, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 4, "top": 74.73, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 21, "top": 78.87, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 12, "top": 82.97, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 13, "top": 87.09, "left": 40.95, "valueJustify": 0 },
+    { "gpioid": 14, "top": 91.20, "left": 40.95, "valueJustify": 0 },
+
+    { "gpioid": 41, "top": 4.17, "left": 76.68, "valueJustify": -1 },
+    { "gpioid": 42, "top": 8.28, "left": 76.69, "valueJustify": -1 },
+    { "gpioid": 39, "top": 4.17, "left": 80.89, "valueJustify": 0 },
+    { "gpioid": 40, "top": 8.28, "left": 80.89, "valueJustify": 0 }
+  ],
+  "settings": {
+    "pinWidth": 2.6,
+    "pinHeight": 2.6,
+    "showPinNumber": true,
+    "valueBackGroundColor": "",
+    "valueMinWidth": 7.4,
+    "valuePinMargin": 1.8,
+    "valueFontSize": 1.05
+  },
+  "stats": {
+    "top": 65,
+    "left": 8,
+    "fontSize": 1.5,
+    "gap": 2.7
+  },
+  "wifiFeedback": {
+    "top": 3,
+    "left": 17.7,
+    "width": 7,
+    "background": "light"
+  }
+}
