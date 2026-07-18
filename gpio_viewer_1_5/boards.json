@@ -155,6 +155,11 @@
         "pins": "indicators/Freenove-esp32-wroom.json"
     },
     {
+        "name": "Freenove ESP32-WROVER-CAM",
+        "image": "devboards_images/Freenove-ESP32-Wrover-CAM.png",
+        "pins": "indicators/Freenove-ESP32-Wrover-CAM.json"
+    },
+    {
         "name": "Heltec HT-WB32_V3",
         "image": "devboards_images/Heltec HT-WB32_V3.png",
         "pins": "indicators/Heltec HT-WB32_V3.json"
